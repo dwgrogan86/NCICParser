@@ -227,6 +227,25 @@ internal class Parser
         return true;
     }
 
+    private static string GetParent(List<RawLine> lines, int startIndex)
+    {
+        StringBuilder returnValue = new();
+
+        for (int i = startIndex; i >= 0; i--)
+        { 
+            var line = lines[i];
+            if (line.IsBlank)
+                break;
+
+            if (returnValue.Length > 0)
+                returnValue.Insert(0, line.Text.Trim() + " ");
+            else
+                returnValue.Append(line.Text.Trim());
+        }
+
+        return returnValue.ToString();
+    }
+
     /// <summary>
     /// Determines the blank line tolerance between code row items
     /// </summary>
@@ -253,7 +272,7 @@ internal class Parser
         // Since the section start contains the section name, we have to find the first blank to know 
         // we're past the name.
         string? lastValidCode = null;
-        int blankTolerance = 2;
+        int blankTolerance = 1;
         var parent = "";
         var parseState = ParseState.InSectionHeader;
         var parsePattern = string.Empty;
@@ -286,8 +305,7 @@ internal class Parser
                     blankCount = 0;
 
                     // Set parent item (if any)...
-                    RawLine parentLine = lines[line.Index - 1];
-                    parent = parentLine.Text.Trim();
+                    parent = GetParent(lines, line.Index - 1);
                 }
             }
             
