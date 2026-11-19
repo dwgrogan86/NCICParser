@@ -1,4 +1,4 @@
-﻿namespace NCICParser;
+﻿namespace NCICParser.src;
 
 /// <summary>
 /// Represents a parsed code item row and its associated source line metadata.

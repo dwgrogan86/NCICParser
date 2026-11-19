@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NCICParser;
+namespace NCICParser.src;
 
 /// <summary>
 /// Represents a single Section Group

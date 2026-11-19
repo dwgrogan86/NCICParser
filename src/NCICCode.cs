@@ -1,4 +1,4 @@
-﻿namespace NCICParser;
+﻿namespace NCICParser.src;
 
 /// <summary>
 /// Defines the common output structure to Code csv file.

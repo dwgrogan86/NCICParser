@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace NCICParser;
+namespace NCICParser.src;
 
 /// <summary>
 /// Handles Reading in the current NCIC Code file

@@ -1,4 +1,4 @@
-﻿namespace NCICParser;
+﻿namespace NCICParser.src;
 
 /// <summary>
 /// Represents a rejected NCIC record parsing operation and its associated rejection details.

@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace NCICParser;
+namespace NCICParser.src;
 
 /// <summary>
 /// Handles exporting the parsed content to a csv file

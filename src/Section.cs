@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using System.Text.RegularExpressions;
 
-namespace NCICParser;
+namespace NCICParser.src;
 
 /// <summary>
 /// Represents a Code Section

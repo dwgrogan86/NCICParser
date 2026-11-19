@@ -1,4 +1,4 @@
-﻿namespace NCICParser;
+﻿namespace NCICParser.src;
 
 /// <summary>
 /// Represents a named item associated with a raw source line.

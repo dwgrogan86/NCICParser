@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace NCICParser;
+namespace NCICParser.src;
 
 /// <summary>
 /// Represents the raw source file line
