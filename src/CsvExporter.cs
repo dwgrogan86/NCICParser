@@ -10,27 +10,24 @@ internal static class CsvExporter
     /// <summary>
     /// Maps the parsed content to a common code or reject structure and outputs to csv files
     /// </summary>
-    /// <param name="groups"></param>
-    public static void GenerateFiles(List<SectionGroup> groups)
+    /// <param name="sections"></param>
+    public static void GenerateFiles(List<Section> sections)
     {
         List<NCICCode> goodItems = [];
         List<ParseReject> badItems = [];
 
-        foreach (var grp in groups)
+        foreach (var section in sections)
         {
-            foreach (var section in grp.Sections)
+            foreach (var subsection in section.SubSections)
             {
-                var rows = section.CodeItemRows.OrderBy(i => i.FileLineNumber).ToList();
+                var rows = subsection.CodeItemRows.OrderBy(i => i.FileLineNumber).ToList();
                 for (var idx = 0; idx < rows.Count; idx++)
                 {
                     var row = rows[idx];
 
                     if (row.Rejected)
                     {
-                        ParseReject code = new(row, grp.Name)
-                        {
-                            Reason = "Column Map No Matched",
-                        };
+                        ParseReject code = new(row, section.Name);
                         badItems.Add(code);
                     }
                     else
@@ -40,13 +37,13 @@ internal static class CsvExporter
                             NCICCode code = new(row)
                             {
                                 ColumnNumber = jdx + 1,
-                                ColumnName = section.CodeColumns[jdx].ColumnName,
+                                ColumnName = subsection.CodeColumns[jdx].ColumnName,
                                 Value = row.CodeItemValues[jdx],
-                                CodeSet = section.SectionCode(),
-                                ParentCode = row.ParentCode,
-                                ParentDescription = row.ParentCodeDesc,
-                                GroupName = grp.Name,
-                                SectionName = section.Name
+                                CodeSet = subsection.SubSectionCode(),
+                                CategoryCode = row.CategoryCode,
+                                CategoryDescription = row.CategoryDescription,
+                                SectionName = section.Name,
+                                SubSectionName = subsection.Name
                             };
 
                             goodItems.Add(code);
@@ -76,8 +73,8 @@ internal static class CsvExporter
             "CodeSet," +
             "SectionName," +
             "SubSectionName," +
-            "ParentCode," +
-            "ParentDescription," +
+            "CategoryCode," +
+            "CategoryDescription," +
             "Column," +
             "Name," +
             "Value," +
@@ -91,10 +88,10 @@ internal static class CsvExporter
             writer.WriteLine(
                 string.Join(",",
                     Escape(code.CodeSet),
-                    Escape(code.GroupName),
                     Escape(code.SectionName),
-                    Escape(code.ParentCode),
-                    Escape(code.ParentDescription),
+                    Escape(code.SubSectionName),
+                    Escape(code.CategoryCode),
+                    Escape(code.CategoryDescription),
                     Escape(code.ColumnNumber.ToString()),
                     Escape(code.ColumnName),
                     Escape(code.Value),
@@ -121,7 +118,9 @@ internal static class CsvExporter
         writer.WriteLine(
             "Reason," +
             "SectionName," +
-            "LineNumber," +
+            "PageNumber," +
+            "PageLineNumber," +
+            "FileLineNumber," +
             "Text");
 
         // Write the content

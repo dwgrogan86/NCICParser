@@ -2,6 +2,7 @@
 
 namespace NCICParser.src;
 
+
 /// <summary>
 /// Represents the raw source file line
 /// </summary>
@@ -9,7 +10,7 @@ namespace NCICParser.src;
 /// <param name="fileLineNumber">the file line number</param>
 /// <param name="pageNumber">the calculated page number</param>
 /// <param name="pageLineNumber">the calculated page line number offset</param>
-internal class RawLine(string text,
+internal partial class RawLine(string text,
         int fileLineNumber,
         int pageNumber,
         int pageLineNumber)
@@ -53,22 +54,22 @@ internal class RawLine(string text,
         Text.StartsWith('\f');
 
     /// <summary>
-    /// Determines if this line is a code list parent line
+    /// Determines if this line is a code list category line
     /// </summary>
-    public bool IsParentLine =>
-        IsLineOfType(@"^[A-Za-z0-9]+\:[A-Za-z0-9 ]*");
+    public bool IsCategoryLine =>
+        CategoryLineRegex().IsMatch(Text);
 
     /// <summary>
     /// Determines if this line is a section header
     /// </summary>
     public bool IsSectionHeader =>
-        IsLineOfType(@"^\f\s*\d*(\.\d*)?\s-\s.*");
+        SectionHeaderRegex().IsMatch(Text);
 
     /// <summary>
     /// Determines if this line is a code header
     /// </summary>
     public bool IsCodeHeader =>
-        IsLineOfType(@"^(?!.*=)(?![ 0-9])(?!\S*/)\S{3,}(?:\s+\S+)*\s{2,}\S+");
+        CodeHeaderRegex().IsMatch(Text);
 
     /// <summary>
     /// Determines if this line is solely a date value (used for end of page tracking)
@@ -80,7 +81,7 @@ internal class RawLine(string text,
     /// Determines if this line is a "Table of Contents" line
     /// </summary>
     public bool IsTableOfContents =>
-        IsLineOfType(@"^\s*Table of Contents\s*$");
+        TableOfContentsRegex().IsMatch(Text);
 
     /// <summary>
     /// Parses code list column specifications from the line
@@ -89,15 +90,17 @@ internal class RawLine(string text,
     /// <exception cref="Exception"></exception>
     public List<CodeColumn> GetColumnSpecs()
     {
+        const int LastFieldPad = 255;
+
         List<CodeColumn> returnValue = [];
-        string pattern = @"(?<=^|\s{2,})\S.*?(?=\s{2,}|$)";
 
         if (!IsCodeHeader)
             return returnValue;
 
-        var matches = Regex.Matches(Text, pattern, RegexOptions.Compiled | RegexOptions.Singleline);
+        var matches = ColumnSpecsRegex().Matches(Text);
+        CodeColumn? previousColumn = null;
 
-        foreach(Match m in matches)
+        foreach (Match m in matches)
         {
             CodeColumn item = new()
             {
@@ -106,21 +109,11 @@ internal class RawLine(string text,
             };
 
             returnValue.Add(item);
+            previousColumn?.ColumnWidth = item.ColumnStart - previousColumn.ColumnStart;
+            previousColumn = item;
         }
 
-        // Go in reverse order to get the column widths
-        for (int i = returnValue.Count - 1; i >= 0; i--)
-        {
-            CodeColumn col = returnValue[i];
-
-            if (i == returnValue.Count - 1)
-                col.ColumnWidth = 255;   // Last Column make sure it get's everything to the end..
-            else
-                col.ColumnWidth = returnValue[i + 1].ColumnStart - col.ColumnStart;
-
-            if (col.ColumnWidth == 0)
-                throw new Exception("Cannot Use Zero length Column Width");
-        }
+        previousColumn?.ColumnWidth = LastFieldPad;
 
         return returnValue;
     }
@@ -133,14 +126,5 @@ internal class RawLine(string text,
     {
         return $"[{FileLineNumber}] {Text}";
     }
-
-    /// <summary>
-    /// Runs the Regex pattern against this line to see if it matches
-    /// </summary>
-    /// <param name="pattern">Current pattern</param>
-    /// <returns></returns>
-    private bool IsLineOfType(string pattern) =>
-        !string.IsNullOrWhiteSpace(Text) &&
-        Regex.IsMatch(Text, pattern, RegexOptions.Compiled | RegexOptions.Singleline);
 
 }

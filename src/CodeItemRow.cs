@@ -9,9 +9,9 @@ internal class CodeItemRow(
         : RawLine(line.Text, line.FileLineNumber, line.PageNumber, line.PageLineNumber)
 {
     /// <summary>
-    /// Gets or set the raw ParentCode value
+    /// Gets or set the raw category value
     /// </summary>
-    public string ParentCodeRaw { get; set; } = string.Empty;
+    public string CategoryRaw { get; set; } = string.Empty;
 
     /// <summary>
     /// Gets or Sets the list of code item values
@@ -30,19 +30,19 @@ internal class CodeItemRow(
     public bool Rejected { get; set; } = false;
 
     /// <summary>
-    /// Returns the Parent code value from the raw value
+    /// Returns the Category code value from the raw value
     /// </summary>
-    public string ParentCode =>
-        ParentCodeRaw.Length > 0
-            ? ParentCodeRaw.Split(':', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).FirstOrDefault() ?? string.Empty
+    public string CategoryCode =>
+        CategoryRaw.Length > 0
+            ? CategoryRaw.Split(':', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).FirstOrDefault() ?? string.Empty
             : string.Empty;
 
     /// <summary>
-    /// Returns the Parent code description (if any) or the parent code as the description.
+    /// Returns the Category code description (if any) or the category code as the description.
     /// </summary>
-    public string ParentCodeDesc =>
-        ParentCodeRaw.Length > 0
-            ? ParentCodeRaw.Split(':', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).LastOrDefault() ?? string.Empty
+    public string CategoryDescription =>
+        CategoryRaw.Length > 0
+            ? CategoryRaw.Split(':', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).LastOrDefault() ?? string.Empty
             : string.Empty;
 
 }

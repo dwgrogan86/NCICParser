@@ -2,7 +2,7 @@
 
 NCICParser converts the FBI NCIC Code Manual from a layout-preserved text file into structured, normalized data suitable for database import, analytics, and lookup applications.
 
-The parser was developed specifically to address challenges commonly found in large government PDF publications, including:
+The parser was developed specifically to address the NCIC Codes, March 31, 2023 edition with the challenges it presented, including:
 
 - Variable-width table layouts
 - Multiple table formats within a single document
@@ -10,7 +10,7 @@ The parser was developed specifically to address challenges commonly found in la
 - Sections spanning multiple pages
 - Repeated headers caused by page breaks
 - Embedded narrative text
-- Parent-child code relationships
+- Category-List relationships
 
 Rather than relying on a fixed schema, the parser dynamically discovers table structures from the document itself and normalizes the resulting data.
 
@@ -27,7 +27,7 @@ Examples include:
 - Variable column counts
 - Empty trailing columns
 - Narrative paragraphs embedded between code lists
-- Parent-child code hierarchies
+- Category-List code hierarchies
 
 NCICParser handles these cases automatically through a combination of document structure discovery and post-processing normalization.
 
@@ -47,13 +47,13 @@ The `-layout` option is required because the parser relies on preserved spacing,
 
 ## Parsing Strategy
 
-### 1. Group Discovery
+### 1. Section Discovery
 
-Section groups are identified from the document's table of contents.
+Sections are identified from the document's table of contents.
 
-### 2. Section Discovery
+### 2. SubSection Discovery
 
-Sections are discovered dynamically within each group.
+SubSections are discovered dynamically within each section.
 
 ### 3. Dynamic Table Discovery
 
@@ -61,8 +61,8 @@ The parser calculates column positions from table headers and builds parsing pat
 
 ### 4. Post-Processing Normalization
 
-- Collapse duplicated groups
 - Collapse duplicated sections
+- Collapse duplicated subsections
 - Collapse wrapped records
 - Normalize multi-page content
 

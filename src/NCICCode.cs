@@ -14,24 +14,24 @@ internal class NCICCode(
     public string CodeSet { get; set; } = "";
 
     /// <summary>
-    /// Gets or Sets the Group Name
-    /// </summary>
-    public string GroupName { get; set; } = "";
-
-    /// <summary>
     /// Gets or Sets the Section Name
     /// </summary>
     public string SectionName { get; set; } = "";
 
     /// <summary>
-    /// Gets or Sets the ParentCode (if any)
+    /// Gets or Sets the SubSection Name
     /// </summary>
-    public string ParentCode { get; set; } = "";
+    public string SubSectionName { get; set; } = "";
 
     /// <summary>
-    /// Gets or Sets the ParentDescription (if any)
+    /// Gets or Sets the CategoryCode (if any)
     /// </summary>
-    public string ParentDescription { get; set; } = "";
+    public string CategoryCode { get; set; } = "";
+
+    /// <summary>
+    /// Gets or Sets the CategoryDescription (if any)
+    /// </summary>
+    public string CategoryDescription { get; set; } = "";
 
     /// <summary>
     /// Gets or sets the Ordinal Code ColumnNumber

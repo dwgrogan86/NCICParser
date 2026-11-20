@@ -12,5 +12,5 @@ internal class ParseReject(
     /// <summary>
     /// Gets or Sets the Reject reason.
     /// </summary>
-    public string Reason { get; set; } = string.Empty;
+    public string Reason { get; set; } = "Column Map No Matched";
 }

@@ -11,17 +11,17 @@ new date pattern
 -- 1: Import using Task / Flat file import (Adjust all string types to nvarchar(max), and all number to int for now...
 -- NOTE: it will chose the same db file (NCICCodes) as the file name automatically - that's ok
 
--- 2: Post import Run to clean up these erroneous parent codes...
-UPDATE [NCICCodes].[dbo].[NCICCodes] SET ParentCode = null, ParentDescription = null WHERE ParentCode like 'Sorted%'
-UPDATE [NCICCodes].[dbo].[NCICCodes] SET ParentCode = null, ParentDescription = null WHERE ParentCode like 'Most Fr%'
+-- 2: Post import Run to clean up these erroneous Category codes...
+UPDATE [NCICCodes].[dbo].[NCICCodes] SET CategoryCode = null, CategoryDescription = null WHERE CategoryCode like 'Sorted%'
+UPDATE [NCICCodes].[dbo].[NCICCodes] SET CategoryCode = null, CategoryDescription = null WHERE CategoryCode like 'Most Fr%'
 
 -- 3: Use Pivot alone to insert into new (wide) table NCICCodesTemp
 SELECT
     CodeSet,
     SectionName,
     SubSectionName,
-    ParentCode,
-    ParentDescription,
+    CategoryCode,
+    CategoryDescription,
     [1] As [Code],
     [2] As [Description],
     [3] As [Comment]
@@ -32,8 +32,8 @@ FROM
         CodeSet,
         SectionName,
         SubSectionName,
-        ParentCode,
-        ParentDescription,
+        CategoryCode,
+        CategoryDescription,
         FileLineNumber,
         [Column],
         [Value]
@@ -52,7 +52,7 @@ PIVOT
 ORDER BY
     [SectionName], 
     [SubSectionName], 
-    [ParentCode], 
+    [CategoryCode], 
     [Code]
 
 
@@ -61,8 +61,8 @@ SELECT TOP (1000)
       MAX(LEN([CodeSet])) AS [CodeSet]
       ,MAX(LEN([SectionName])) AS [SectionName]
       ,MAX(LEN([SubSectionName])) AS [SubSectionName]
-      ,MAX(LEN([ParentCode])) AS [ParentCode]
-      ,MAX(LEN([ParentDescription])) AS [ParentDescription]
+      ,MAX(LEN([CategoryCode])) AS [CategoryCode]
+      ,MAX(LEN([CategoryDescription])) AS [CategoryDescription]
       ,MAX(LEN([Code])) AS [Code]
       ,MAX(LEN([Description])) AS [Description]
       ,MAX(LEN([Comment])) AS [Comment]
@@ -80,8 +80,8 @@ CREATE TABLE [dbo].[NCICCodes_20230331](
 	[CodeSet] [nvarchar](15) NULL,
 	[SectionName] [nvarchar](28) NOT NULL,
 	[SubSectionName] [nvarchar](109) NOT NULL,
-	[ParentCode] [nvarchar](12) NULL,
-	[ParentDescription] [nvarchar](224) NULL,
+	[CategoryCode] [nvarchar](12) NULL,
+	[CategoryDescription] [nvarchar](224) NULL,
 	[Code] [nvarchar](24) NULL,
 	[Description] [nvarchar](360) NULL,
 	[Comment] [nvarchar](325) NULL
@@ -101,8 +101,8 @@ INSERT INTO NCICCodes_20230331(
     CodeSet,
     SectionName,
     SubSectionName,
-    ParentCode,
-    ParentDescription,
+    CategoryCode,
+    CategoryDescription,
     [Code],
     [Description],
     [Comment]
@@ -111,8 +111,8 @@ SELECT
     CodeSet,
     SectionName,
     SubSectionName,
-    ParentCode,
-    ParentDescription,
+    CategoryCode,
+    CategoryDescription,
     [1] As [Code],
     [2] As [Description],
     [3] As [Comment]
@@ -122,8 +122,8 @@ FROM
         CodeSet,
         SectionName,
         SubSectionName,
-        ParentCode,
-        ParentDescription,
+        CategoryCode,
+        CategoryDescription,
         FileLineNumber,
         [Column],
         [Value]
@@ -142,5 +142,5 @@ PIVOT
 ORDER BY
     [SectionName], 
     [SubSectionName], 
-    [ParentCode], 
+    [CategoryCode], 
     [Code]

@@ -13,10 +13,10 @@ class Program
         //       file are provided in this solution.
         string filePathText = @".\Resources\nciccodemanual.txt";
 
-        // Parse the file returning all groups
-        var groups = Parser.Parse(filePathText);
+        // Parse the file returning all sections
+        var sections = Parser.Parse(filePathText);
 
         // Export parsed content to csv files.
-        CsvExporter.GenerateFiles(groups);
+        CsvExporter.GenerateFiles(sections);
     }
 }
