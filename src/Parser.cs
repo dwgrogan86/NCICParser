@@ -30,6 +30,9 @@ internal class Parser
         InCodeList = 2,
     }
 
+    /// <summary>
+    /// Cache storage for executed Regex to reduce new instances from spinning up.
+    /// </summary>
     private static readonly Dictionary<string, Regex> _codeListRegex = [];
 
     // These codes were found to be preceding prose text
@@ -62,26 +65,42 @@ internal class Parser
         foreach (var section in returnValue)
         {
             section.SubSections = GetSubSections(lines, section);
+
+            // Some sections don't have any identifiable SubSections
             if (section.SubSections.Count == 0)
                 continue;
 
-            // Makes sure last subsections in each section
-            // stop before a new section begins (contains content)
+            // Make sure last subsection in each section
+            // stops just before a new section begins (contains content)
             CloseSubSections(returnValue);
 
+            // Now we have the encasulated row ranges to do the subsection parses
             foreach (var subSection in section.SubSections)
-                subSection.CodeItemRows = ParseSection(lines, subSection, dateEoPText);
+                subSection.CodeItemRows = ParseSubSection(lines, subSection, dateEoPText);
         }
 
-        CollapseSections(returnValue);
-        foreach (var section in returnValue)
+        // At this point, we're likely to have multiple duplicated section and subsection
+        // objects, as well as CodeItemRows that are actually continuations of previous
+        // rows.  The following will crunch them all back to a single instance of each
+        // respective artifact where it determines duplication or extension as applicable.
+        CollapseAll(returnValue);
+
+        return returnValue;
+    }
+
+    /// <summary>
+    /// Collapses duplicate sections, subsections, and code item rows into single instances.
+    /// </summary>
+    /// <param name="sections">The sections to collapse.</param>
+    private static void CollapseAll(List<Section> sections)
+    {
+        CollapseSections(sections);
+        foreach (var section in sections)
         {
             CollapseSubSections(section.SubSections);
             foreach (var subsection in section.SubSections)
                 CollapseCodeItemRows(subsection.CodeItemRows);
         }
-
-        return returnValue;
     }
 
     /// <summary>
@@ -196,6 +215,9 @@ internal class Parser
 
             section.SubSections[^1].FileLineNumberEnd = sections[i + 1].FileLineNumber - 1;
         }
+
+        // NOTE: the very last SubSection end is left at -1 to give indeterminate range, and thus
+        // will stop when it determines a stopping point programatically.
     }
 
     /// <summary>
@@ -208,6 +230,9 @@ internal class Parser
     /// <returns>true if parsing is done, or false if not done</returns>
     private static bool IsDoneParsing(List<RawLine> lines, int startIndex, string? lastCode)
     {
+        // Some codes are known to be at the end of a list, but have prose text following
+        // that if allowed to continue would be flagged as non-matching text, so we'll 
+        // just head that off here.
         if (lastCode is not null && knownDones.Contains(lastCode))
             return true;
 
@@ -216,11 +241,17 @@ internal class Parser
             RawLine line = lines[i];
             if (line.IsBlank)
                 continue;
-            else if (line.IsDateLine && line.Text.Trim() == Constants.PDF_FILE_DATE_2026)   // Near bottom of every page...
+
+            // Near bottom of every page?
+            else if (line.IsDateLine && line.Text.Trim() == Constants.PDF_FILE_DATE_2026)   
                 return true;
+
+            // A category line is next?
             else if (line.IsCategoryLine)
-                return true;            // A category line is next..
-            else                        // Some other non-blank to consider...
+                return true;
+
+            // Some other non-blank to consider..
+            else
                 return false;
         }
 
@@ -267,7 +298,7 @@ internal class Parser
     /// <param name="subSection">Current SubSection</param>
     /// <param name="dateEoPValue">Date on the bottom of each page</param>
     /// <returns>Fully parsed section content</returns>
-    private static List<CodeItemRow> ParseSection(List<RawLine> lines, SubSection subSection, string dateEoPValue)
+    private static List<CodeItemRow> ParseSubSection(List<RawLine> lines, SubSection subSection, string dateEoPValue)
     {
         List<CodeItemRow> returnValue = [];
         List<RawLine> sectionLines = [.. lines.Where(i => i.FileLineNumber > subSection.FileLineNumber
