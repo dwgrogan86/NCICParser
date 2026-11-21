@@ -43,7 +43,8 @@ which remove form-feed page boundaries and collapse column spacing to a single s
 
 The parser must identify column boundaries, associate continuation lines with the correct field, and reconstruct each logical record before normalization.
 
-```bash (chose your version - noting that all SQL Config settings expect 2026)
+```bash
+# Chose your version - noting that all SQL Config settings expect 2026
 pdftotext -layout nciccodemanual.pdf nciccodemanual.txt
 pdftotext -layout NCIC-Code-Manual-June-2026.pdf NCIC-Code-Manual-June-2026.txt
 ```
