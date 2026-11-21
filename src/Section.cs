@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NCICParser.src;
+﻿namespace NCICParser.src;
 
 /// <summary>
 /// Represents a high level Section
