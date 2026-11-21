@@ -11,10 +11,10 @@ internal static class NCICFileReader
     /// Reads the NCIC Code File
     /// </summary>
     /// <param name="filePath">Fully Qualified Path to the NCIC Text file</param>
-    /// <returns></returns>
+    /// <returns>List of RawLine objects</returns>
     public static List<RawLine> ReadFile(string filePath)
     {
-        List<RawLine> results = [];
+        List<RawLine> returnValue = [];
 
         int pageNumber = 1;
         int pageLineNumber = 0;
@@ -28,9 +28,9 @@ internal static class NCICFileReader
                 pageLineNumber = 0;
             }
 
-            results.Add(new RawLine(line, ++lineNumber, pageNumber, ++pageLineNumber));
+            returnValue.Add(new RawLine(line, ++lineNumber, pageNumber, ++pageLineNumber));
         }
 
-        return results;
+        return returnValue;
     }
 }
