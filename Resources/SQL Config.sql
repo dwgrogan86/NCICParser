@@ -75,7 +75,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[NCICCodes_20230331](
+CREATE TABLE [dbo].[NCICCodes_20260630](
 	[Id] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
 	[CodeSet] [nvarchar](15) NULL,
 	[SectionName] [nvarchar](28) NOT NULL,
@@ -94,10 +94,10 @@ DROP TABLE NCICCodesTemp
 -- 7: Rename the deep import table to the versioned name
 EXEC sp_rename
     'NCICCodes',
-    'NCICCodesRaw_20230331';
+    'NCICCodesRaw_20260630';
 
 -- 8: Run this pivot to insert new values into new wide table
-INSERT INTO NCICCodes_20230331(
+INSERT INTO NCICCodes_20260630(
     CodeSet,
     SectionName,
     SubSectionName,
@@ -127,7 +127,7 @@ FROM
         FileLineNumber,
         [Column],
         [Value]
-    FROM NCICCodesRaw_20230331
+    FROM NCICCodesRaw_20260630
 ) src
 PIVOT
 (
