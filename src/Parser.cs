@@ -45,7 +45,7 @@ internal class Parser
     private static readonly HashSet<string> blanksFollowing2 = [
         "EMULTIM", 
         "HBUFFER", 
-        "DV0ICER"
+        "DV0ICER",
     ];
 
     /// <summary>
@@ -54,7 +54,7 @@ internal class Parser
     /// </summary>
     /// <param name="filePath">Full file path to the NCIC text file (including extension)</param>
     /// <returns>List of parsed Sections containing all parsed content</returns>
-    internal static List<Section> Parse(string filePath)
+    public static List<Section> Parse(string filePath, string dateEoPText)
     {
         var lines = NCICFileReader.ReadFile(filePath);
         var returnValue = GetSections(lines);
@@ -70,7 +70,7 @@ internal class Parser
             CloseSubSections(returnValue);
 
             foreach (var subSection in section.SubSections)
-                subSection.CodeItemRows = ParseSection(lines, subSection, Constants.PDF_FILE_DATE);
+                subSection.CodeItemRows = ParseSection(lines, subSection, dateEoPText);
         }
 
         CollapseSections(returnValue);
@@ -216,7 +216,7 @@ internal class Parser
             RawLine line = lines[i];
             if (line.IsBlank)
                 continue;
-            else if (line.IsDateLine && line.Text.Trim() == Constants.PDF_FILE_DATE)   // Near bottom of every page...
+            else if (line.IsDateLine && line.Text.Trim() == Constants.PDF_FILE_DATE_2026)   // Near bottom of every page...
                 return true;
             else if (line.IsCategoryLine)
                 return true;            // A category line is next..

@@ -124,7 +124,7 @@ internal partial class RawLine(string text,
     /// <returns></returns>
     public override string ToString()
     {
-        return $"[{FileLineNumber}] {Text}";
+        return $"Line: {FileLineNumber}: \"{Text}\"";
     }
 
 }

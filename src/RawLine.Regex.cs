@@ -22,7 +22,7 @@ internal partial class RawLine
     /// <summary>
     /// Matches on known Category line patterns
     /// </summary>
-    [GeneratedRegex(@"^[A-Za-z0-9]+\:[A-Za-z0-9 ]*")]
+    [GeneratedRegex(@"^[A-Za-z0-9/]+:\s*[A-Za-z0-9 ]?")]
     private static partial Regex CategoryLineRegex();
 
     /// <summary>
