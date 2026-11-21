@@ -16,16 +16,12 @@ internal static class NCICFileReader
     {
         List<RawLine> results = [];
 
-        using StreamReader reader = new(filePath, Encoding.UTF8);
-
         int pageNumber = 1;
         int pageLineNumber = 0;
         int lineNumber = 0;
 
-        while (!reader.EndOfStream)
+        foreach(string line in File.ReadAllLines(filePath))
         {
-            string line = reader.ReadLine() ?? string.Empty;
-
             if (line.StartsWith('\f'))
             {
                 pageNumber++;
