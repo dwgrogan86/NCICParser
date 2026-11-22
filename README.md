@@ -1,0 +1,125 @@
+# NCICParser
+
+NCICParser converts the FBI NCIC Code Manual from a layout-preserved text file into structured, normalized data suitable for database import, analytics, and lookup applications.
+
+The parser was developed specifically to address the NCIC Codes, March 31, 2023, and June 30, 2026 editions with the challenges they presented, including:
+
+- Variable-width table layouts
+- Multiple table formats within a single document
+- Wrapped records
+- Sections and Subsections spanning multiple pages
+- Repeated headers caused by page breaks
+- Inconsistent line spacing within certain lists
+- Embedded narrative text
+- Category-List relationships
+
+Rather than relying on a fixed schema, the parser dynamically discovers table structures from the document itself and normalizes the resulting data using the same logic for both source files.
+
+---
+
+## Overview
+
+The NCIC Code Manual contains thousands of codes organized into hundreds of sections. While the data appears tabular, the document contains numerous formatting inconsistencies that make extraction difficult.
+
+Examples include:
+
+- Sections repeated across page breaks
+- Records wrapped onto multiple lines
+- Variable column counts
+- Empty trailing columns
+- Narrative paragraphs embedded between code lists
+- Category-List code hierarchies
+
+NCICParser handles these cases automatically through a combination of document structure discovery and post-processing normalization.
+
+---
+
+## Input
+
+### First
+
+Install Poppler (`pdftotext`) separately. A VS Code package manager installation is one option; any working Poppler installation can be used.
+
+The parser expects a layout-preserved text file created by converting the NCIC Code Manual PDF to text with the `pdftotext` utility and the `-layout` option.
+The `-layout` option preserves form-feed characters and fixed-width column spacing used by the parser to identify section, page, and column boundaries.
+
+### Second
+
+Download the original NCIC Codes Manual PDF as publicly available through the Internet Archive public collection:
+https://archive.org/details/NCICCodeManual2026/NCIC-Code-Manual-June-2026/
+
+Text versions supplied by Internet Archive may not preserve the required formatting. Download the PDF and convert it locally:
+
+```bash
+pdftotext -layout NCIC-Code-Manual-June-2026.pdf NCIC-Code-Manual-June-2026.txt
+```
+
+### Third
+
+Place the generated text file at the path configured in `Program.cs`, or update `Program.cs` to accept or resolve the fully qualified path.
+
+---
+
+## Parsing Strategy
+
+### 1. Section Discovery
+
+Sections are identified from the document's table of contents.
+
+### 2. SubSection Discovery
+
+SubSections are discovered dynamically within each section.
+
+### 3. Dynamic Table Discovery
+
+The parser calculates column positions from table headers and builds parsing patterns dynamically.
+
+### 4. Post-Processing Normalization
+
+- Collapse duplicated sections
+- Collapse duplicated subsections
+- Collapse wrapped records
+- Normalize multi-page content
+
+---
+
+## Example Input
+
+```text
+AER0: AIRCRAFT SEE THE VEHICLE FILE CHAPTER OF THE NCIC OPERATING
+MANUAL
+Model (VM0)        Description                           Comment
+BLM                BLIMP
+
+DRN                DRONE%                                OVER.55 POUNDS AND ARE SUBJECT TO FAA
+                                                         REGISTRATION RULES. SMALLER DRONES ARE TO BE
+                                                         ENTERED IN THE ARTICLE FILE
+
+HEL                HELICOPTERS AND OTHER ROTOR WING OR CONSIDER AN AUTOGIRO / AUTOGYRO TO BE A
+                   ROTARY-BLADE DRIVEN AIRCRAFT%       HELICOPTER FOR CODING PURPOSES
+```
+
+## Example Output
+
+```csv
+CodeSet,SectionName,SubSectionName,CategoryCode,CategoryDescription,Column,Name,Value,PageNumber,PageLineNumber,FileLineNumber
+"VMA/VMO","Vehicle Data Codes","2.2 - Vehicle Make/Brand (VMA) and Model (VMO) for Automobiles, Light-Duty Vans, Light-Duty Trucks, and Parts","AER0","AIRCRAFT SEE THE VEHICLE FILE CHAPTER OF THE NCIC OPERATING MANUAL",1,"Model (VM0)","BLM",780,27,54253
+"VMA/VMO","Vehicle Data Codes","2.2 - Vehicle Make/Brand (VMA) and Model (VMO) for Automobiles, Light-Duty Vans, Light-Duty Trucks, and Parts","AER0","AIRCRAFT SEE THE VEHICLE FILE CHAPTER OF THE NCIC OPERATING MANUAL",2,"Description","BLIMP",780,27,54253
+"VMA/VMO","Vehicle Data Codes","2.2 - Vehicle Make/Brand (VMA) and Model (VMO) for Automobiles, Light-Duty Vans, Light-Duty Trucks, and Parts","AER0","AIRCRAFT SEE THE VEHICLE FILE CHAPTER OF THE NCIC OPERATING MANUAL",3,"Comment","",780,27,54253
+```
+
+### This structure when uploaded to a DB is easily pivot-ready - SEE SQL Config.sql
+
+## Requirements
+
+- .NET 10 SDK
+- Poppler `pdftotext`
+- An NCIC Code Manual PDF that you are authorized to use
+
+## Licensing and source material
+
+The NCICParser source code is licensed under the MIT License. This license covers the parser's source and documentation only; it does not grant rights to the NCIC Code Manual PDFs or extracted text. Confirm the terms that apply to your source copies before redistributing them.
+
+## Disclaimer
+
+This project is an independent parser for the NCIC Code Manual and is not affiliated with, endorsed by, or maintained by the FBI or the NCIC program.

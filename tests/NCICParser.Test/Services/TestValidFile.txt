@@ -1,0 +1,3478 @@
+﻿NCIC Code Manual as of
+June 30, 2026
+                            NCIC Code Manual
+                            Table of Contents
+•   Article Data Codes
+
+•   Boat Data Codes
+
+•   Gun Data Codes
+
+•   Other Transactions Codes
+
+•   Personal Descriptors Codes
+
+•   Securities Data Codes
+
+•   State and Country Data Codes
+
+•   Uniform Offense Data Codes
+
+•   Vehicle Data Codes
+Article Data Codes
+As of June 30, 2026
+                               Article Data Codes
+                               Table of Contents
+
+1   Article Type Field Codes
+      1.1   Article Category Type (TYP) Field Codes
+      1.2   Article Type (TYP) Field Codes by Article Name
+
+2   Article Brand Name (BRA) Field Codes
+
+
+
+
+                                    June 30, 2026
+                                       Page 1
+                            1.1 - Article Category Type (TYP) Field Codes
+
+
+The following alphabetic characters represent the major classifications of articles and will appear in the first position of each
+TYP Field code.
+
+Code                                              Article Name
+0                                                 OFFICE EQUIPMENT (INCLUDES PHOTOCOPIERS AND TYPEWRITERS)
+
+B                                                 BICYCLE
+
+C                                                 CAMERA, CAMERA PARTS, AND PHOTOGRAPHY EQUIPMENT
+
+D                                                 DATA PROCESSING EQUIPMENT
+
+E                                                 EQUIPMENT, MEASURING DEVICES, AND TOOLS
+
+F                                                 FURNITURE AND FURNISHINGS
+
+G                                                 GAMES AND GAMBLING APPARATUS
+
+H                                                 HOUSEHOLD APPLIANCES AND HOUSEWARES
+
+I                                                 ITEMS OF IDENTIFICATION (NONPUBLIC SAFETY, HOMELAND SECURITY, OR CRITICAL
+                                                  INFRASTRUCTURE)
+
+J                                                 SPECIAL DOCUMENTS, FOOD STAMPS, AND TICKETS
+
+K                                                 KEEPSAKES AND COLLECTIBLES
+
+L                                                 LIVESTOCK
+
+M                                                 MUSICAL INSTRUMENTS
+
+P                                                 PERSONAL ACCESSORIES
+
+Q                                                 PUBLIC SAFETY, HOMELAND SECURITY, OR CRITICAL INFRASTRUCTURE ITEMS OF
+                                                  IDENTIFICATION
+
+R                                                 RADIO, TV, AND SOUND ENTERTAINMENT DEVICES
+
+S                                                 SPORTING, CAMPING, EXERCISE, AND RECREATIONAL EQUIPMENT
+
+T                                                 TOXIC CHEMICALS
+
+V                                                 VIEWING EQUIPMENT (INCLUDES BINOCULARS, MICROSCOPES, AND RIFLE SCOPES)
+
+W                                                 WELL-DRILLING EQUIPMENT
+
+Y                                                 ITEMS LISTED IN THE DICTIONARY UNDER Y AND ITEMS NOT LISTED IN THE ARTICLE
+                                                  NAME DICTIONARY
+
+Z                                                 LOST OR STOLEN ITEMS (PUBLIC SAFETY, HOMELAND SECURITY, OR CRITICAL
+                                                  INFRASTRUCTURE)
+
+
+
+
+NOTE: To enter a record for an item not listed in the Article Name dictionary, use the category code Y followed by the complete name of the article. If the article
+name is one word of more than six letters, the first six letters must be used. Treat an article name containing two words as one word, using the first six letters. If an
+article name is three words, the initials of the first two words and the first four letters or the last word must be used. Additional coding instructions can be found in
+the Article File chapter of the NCIC Operating Manual.
+
+
+
+
+                                                                      June 30, 2026
+                                                                                                                                                                        2
+                1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Any articles other than items of identification (category Q) can be coded with a Z as the first character to indicate 'public safety,
+homeland security, or critical infrastructure'. Article records containing a TYP Field Code beginning with T, Q, or Z will be
+retained indefinitely until canceled or cleared.
+
+Code                                   Article Name                            Description
+DCIRCUI                                ACCELERATOR BOARD
+
+MACC0RD                                ACCORDION
+
+0ACC0UN                                ACCOUNTING MACHINE
+
+RACTUAT                                ACTUATOR, ANTENNA
+
+EADAPT0                                ADAPTOR                                 ANY DEVICE FOR CONNECTING TWO PARTS, SUCH
+                                                                               AS ONES THAT ARE OF DIFFERENT SIZES OR HAVE
+                                                                               DIFFERENT MATING FITMENTS
+
+0ADDING                                ADDING MACHINE
+
+0ADDRES                                ADDRESSING MACHINE
+
+EAIRBRS                                AIR BRUSH
+
+EC0MPRE                                AIR COMPRESSOR                          AN ATOMIZER USING COMPRESSED AIR TO SPRAY A
+                                                                               LIQUID, SUCH AS PAINT ON A SURFACE
+
+EAIRC0M                                AIR COMPRESSOR ACCESSORIES              ANY GADGET ADDED TO AN AIR COMPRESSOR TO MAKE
+                                       (NOT OTHERWISE CODED)                   IT MORE USEFUL OR EFFECTIVE
+
+HAIRC0N                                AIR CONDITIONER                         A MACHINE THAT IS USED TO COOL AND DRY THE AIR IN A
+                                                                               BUILDING, ROOM, ETC
+
+EACCHGS                                AIR CONDITIONING CHARGING
+                                       SYSTEM
+
+EAIRFIL                                AIR FILE (TOOL)
+
+EAIRHAN                                AIR HANDLING UNIT                       A DEVICE USED TO REGULATE AND CIRCULATE AIR
+                                                                               AS PART OF A HEATING, VENTILATING, AND AIR-
+                                                                               CONDITIONING (HVAC) SYSTEM
+
+HAIRPUR                                AIR PURIFIER
+
+EAIRWRN                                AIR RATCHET WRENCH                      A RATCHET WRENCH THAT USES COMPRESSED AIR TO
+                                                                               APPLY TORQUE
+
+ERATCHE                                AIR RATCHET/AIR WRENCH
+
+ESPADER                                AIR SPADER
+
+JAIRTIC                                AIRLINE TICKET
+
+EALARM                                 ALARM                                   AN AUTOMATIC DEVICE THAT SERVES TO CALL
+                                                                               ATTENTION, TO ROUSE FROM SLEEP, OR TO WARN OF
+                                                                               FIRE, SMOKE, OR AN INTRUDER
+
+QALIEN                                 ALIEN REGISTRATION CARD OR
+                                       GREEN CARD (PHC)
+
+IALIEN                                 ALIEN REGISTRATION, GREEN,
+                                       PERMANENT RESIDENT CARD OR
+                                       PERMANENT VISA
+
+EAMMETE                                AMMETER
+
+RAMPLIF                                AMPLIFIER                               AN ELECTRONIC DEVICE THAT INCREASES THE VOLTAGE,
+                                                                               CURRENT, OR POWER OF A SIGNAL USED IN WIRELESS
+                                                                               COMMUNICATIONS AND BROADCASTING, AND IN AUDIO
+                                                                               EQUIPMENT OF ALL KINDS
+
+
+
+
+                                                       June 30, 2026
+                                                                                                                                   3
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                       Description
+EANALYZ                ANALYZER                           AN INSTRUMENT FOR THE ANALYSIS OF SOMETHING
+
+EANGLE                 ANGLE
+
+LC0LLAR                ANIMAL IDENTIFICATION COLLAR/TAG
+
+0ANSWER                ANSWERING MACHINE
+
+RANTENN                ANTENNA                            A CONDUCTOR THAT CAN TRANSMIT, SEND AND RECEIVE
+                                                          SIGNALS SUCH AS MICROWAVE, RADIO OR SATELLITE
+                                                          SIGNALS
+
+EARCSMS                ANTENNA & AMP; RADAR CROSS
+                       SECTION MEASUREMENT SYSTEM
+
+EAPNM0N                APNEA MONITOR                      A DEVICE WITH ALARMS, USED TO DETECT CESSATION
+                                                          OF BREATHING, MOST COMMONLY USED IN NEONATES
+                                                          AND INFANTS
+
+SSCUBA                 AQUALUNG
+
+EWELDER                ARC WELDER                         A TYPE OF WELDING THAT USES A WELDING POWER
+                                                          SUPPLY TO CREATE AN ELECTRIC ARC BETWEEN AN
+                                                          ELECTRODE AND THE BASE MATERIAL TO MELT THE
+                                                          METALS AT THE WELDING POINT
+
+GARCADE                ARCADE GAME (INCLUDES COIN
+                       OPERATED)
+
+0ATMMAC                ATM MACHINE
+
+EATTENU                ATTENUATOR                         AN ELECTRONIC DEVICE THAT REDUCES THE AMPLITUDE
+                                                          OF AN OPTICAL OR ELECTRONIC SIGNAL
+
+RCDISC                 AUDIO DISC, COMPACT
+
+RENHANC                AUDIO ENHANCER/STABILIZER
+
+RAUDI0E                AUDIO EQUIPMENT AND                SUPPLIES, TOOLS, OR EQUIPMENT NEEDED FOR
+                       ACCESSORIES (NOT OTHERWISE         REPRODUCING, RECORDING, OR PROCESSING SOUND
+                       CODED)
+
+RPR0CES                AUDIO PROCESSOR                    AN ELECTRONIC DEVICE THAT ALTERS HOW A MUSICAL
+                                                          INSTRUMENT OR OTHER AUDIO SOURCE SOUNDS
+
+RATAPE                 AUDIO TAPE (ALL TYPES)
+
+RSWITCH                AUDIO/VIDEO SWITCHER
+
+RCDPLAY                AUDIO/VIDEO/LASER PLAYERS
+
+EAUDI0M                AUDIOMETER
+
+EAUGER                 AUGER/POST HOLE DIGGER             ANY OF VARIOUS TOOLS OR DEVICES WITH A HELICAL
+                                                          SHAFT OR PART THAT IS USED FOR BORING HOLES AS
+                                                          IN WOOD, SOIL, OR ICE OR MOVING LOOSE MATERIAL AS
+                                                          SNOW
+
+CWINDER                AUTO WINDER FOR CAMERA
+
+MAUT0HA                AUTOHARP
+
+DC0NTR0                AUTOMATIC CONTROLLER
+
+EREGULA                AUTOMATIC CONTROLLER/              CONTROL IN WHICH REGULATING AND SWITCHING
+                       REGULATOR                          OPERATIONS ARE PERFORMED AUTOMATICALLY IN
+                                                          RESPONSE TO PREDETERMINED CONDITIONS
+
+
+
+
+                                     June 30, 2026
+                                                                                                              4
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                     Description
+EAUT0PI                AUTOMATIC PILOT
+
+0TAPEDI                AUTOMATIC TAPE DISPENSER
+
+0DIALER                AUTOMATIC TELEPHONE DIALER
+
+JSTICKE                AUTOMOBILE INSPECTION STICKER
+
+EAUT0M0                AUTOMOTIVE (NOT OTHERWISE        ANY GADGET ADDED TO AN AUTOMOBILE TO MAKE IT
+                       CODED)                           MORE USEFUL OR EFFECTIVE OR TOOLS SPECIFICIALLY
+                                                        USED FOR AN AUTOMOBILE
+
+EVESCT0                AUTOMOTIVE DIAGNOSTIC SCAN/      AN ELECTRONIC TOOL USED TO INTERFACE WITH,
+                       SCAN TOOL                        DIAGNOSE AND SOMETIMES REPROGRAM VEHICLE
+                                                        CONTROL MODULES
+
+EDIAGSC                AUTOMOTIVE DIAGNOSTIC SCANNER AN ELECTRONIC TOOL USED TO INTERFACE WITH,
+                                                        DIAGNOSE AND SOMETIMES REPROGRAM VEHICLE
+                                                        CONTROL MODULES
+
+PBCKPCK                BACKPACK                         A BAG WITH SHOULDER STRAPS THAT ALLOW IT TO BE
+                                                        CARRIED ON ONE'S BACK
+
+IBADGE                 BADGE/SHIELD
+
+QBADGE                 BADGE/SHIELD (PHC)               IDENTIFYING ORGANIZATIONAL MEMBERSHIP ABOUT A
+                                                        PERSON THAT GIVES IDENTIFYING DATA
+
+0BANKBA                BAG, BANK/MONEY
+
+MBAGPIP                BAGPIPES
+
+WBAILER                BAILER (INCLUDES CLEANOUT)
+
+EBALANC                BALANCER
+
+EWHEELB                BALANCER, WHEEL
+
+SBALL                  BALL
+
+MBANJ0                 BANJO
+
+KBULLI0                BAR (GOLD OR SILVER)             A BAR OF METAL/INGOT FASHIONED IN THE SHAPE OF A
+                                                        BAR THAT IS 99.5%-99.9% PURE IN GOLD OR SILVER
+
+DBARC0D                BAR CODE KIT
+
+MBARIT0                BARITONE
+
+EBAR0ME                BAROMETER
+
+MBASS                  BASS
+
+MBASS00                BASSOON
+
+HBTHTUB                BATHTUB
+
+ECHARGE                BATTERY (PACK, CHARGER,          A DEVICE USED TO PUT ENERGY INTO A SECONDARY
+                       RECHARGER)                       CELL OR RECHARGEABLE BATTERY BY FORCING AN
+                                                        ELECTRIC CURRENT THROUGH IT
+
+EBATCHG                BATTERY CHARGER, AUTOMOBILE
+
+RP0WERP                BATTERY PACK, RECHARGEABLE
+
+DP0WERP                BATTERY, RECHARGEABLE
+
+SBBGUN                 BB GUN                           A GUN THAT USES AIR PRESSURE TO FIRE SMALL METAL
+                                                        BALLS (CALLED BBS)
+
+
+
+
+                                      June 30, 2026
+                                                                                                           5
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                  Description
+EPULLER                BEARING PULLER                A TOOL DESIGNED FOR DISMOUNTING BEARINGS FROM
+                                                     HOUSINGS, WHERE THE FIT IS ON THE OUTER RING
+
+FBED                   BED                           A PIECE OF FURNITURE FOR SLEEP OR REST, TYPICALLY
+                                                     A FRAMEWORK WITH A MATTRESS AND COVERINGS
+
+MBELLS                 BELLS, MARCHING BAND OR
+                       ORCHESTRA
+
+SBENCH                 BENCH EXERCISE/INCLINE
+
+FBENCH                 BENCH, OTTOMAN, STOOL
+
+BBICYCL                BICYCLE                       A TWO-WHEELED STEERABLE MACHINE PROPELLED
+                                                     BY PEDALING OR ELECTRIC-POWERED WITH MANUAL
+                                                     CAPABILITY AND STEERED BY HANDLEBARS, FULLY
+                                                     ELECTRIC BICYCLES SHOULD BE ENTERED INTO THE
+                                                     VEHICLE FILE
+
+SRACK                  BICYCLE RACK
+
+BSH0CKS                BICYCLE SHOCKS
+
+BBICYCT                BICYCLE TRAILER (TRAILER
+                       ATTACHMENT FOR BICYCLE)
+
+GP00LTA                BILLIARD TABLE
+
+EBINDER                BINDER                        A MACHINE THAT REAPS AND TIES
+
+VBIN0CU                BINOCULARS
+
+TBI0L0G                BIOLOGICAL
+
+LBIRD                  BIRD
+
+JBIRTHC                BIRTH CERTIFICATE
+
+EBIT                   BIT                           A CUTTING TOOL USED TO REMOVE MATERIAL TO
+                                                     CREATE HOLES, ALMOST ALWAYS OF CIRCULAR CROSS-
+                                                     SECTION
+
+WBIT                   BIT, WELL DRILLING
+
+EBLADE                 BLADE (BLADES NOT OTHERWISE   A TOOL, WEAPON, OR MACHINE WITH AN EDGE THAT
+                       CODED)                        IS DESIGNED TO CUT, PUNCTURE, STAB, SLASH, CHOP,
+                                                     SLICE, THRUST, OR SCRAPE SURFACES OR MATERIALS
+
+HBLENDE                BLENDER                       AN ELECTRIC APPLIANCE WHICH IS USED FOR BLENDING
+                                                     AND MIXING FOODS AND LIQUIDS
+
+WBL0CK                 BLOCK, CROWN/TRAVELING
+
+EBL0WER                BLOWER                        POWER EQUIPMENT DESIGNED OR OPERATED TO
+                                                     PRODUCE A CURRENT OF AIR BY FUEL, ELECTRICITY,
+                                                     OR OTHER MEANS TO PUSH, PROPEL, OR BLOW DUST,
+                                                     LEAVES, GRASS CLIPPINGS, CUTTINGS, AND TRIMMING
+                                                     FROM TREES AND SHRUBS OR OTHER DEBRIS
+
+WBL0W0U                BLOWOUT PREVENTER
+
+SSLANTB                BOARD, SLANT
+
+EB0LTCU                BOLT CUTTER                   A TOOL USED FOR CUTTING CHAINS, PADLOCKS, BOLTS
+                                                     AND WIRE MESH
+
+KB00K                  BOOK COLLECTOR/RARE           A BOOK THAT IS DISTINGUISHED BY ITS EARLY PRINTING
+                                                     DATE, ITS LIMITED ISSUE, THE SPECIAL CHARACTER OF
+                                                     THE EDITION OR BINDING, OR ITS HISTORICAL INTEREST
+
+
+
+
+                                     June 30, 2026
+                                                                                                          6
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                    Description
+FB00KCA                BOOKCASE
+
+RP0WERB                BOOSTER, POWER                  A DEVICE FOR INCREASING POWER OR EFFECTIVENESS
+                                                       OF ANOTHER DEVICE BY INCREASING THE SIGNAL
+
+SB0W                   BOW
+
+HSILVER                BOWL (SILVER)                   A RATHER DEEP, ROUND DISH OR BASIN, USED CHIEFLY
+                                                       FOR HOLDING LIQUIDS, FOOD, ETC. MADE OF SILVER
+
+RCABLEC                BOX, CABLE TV CONVERTER
+
+PBRACEL                BRACELET
+
+PHABRAC                BRACELET, HOUSE ARREST
+
+EBRAKE                 BRAKE                           A MECHANICAL DEVICE THAT INHIBITS MOTION BY
+                                                       ABSORBING ENERGY FROM A MOVING SYSTEM, SUCH
+                                                       AS SLOWING OR STOPPING A MOVING VEHICLE, WHEEL,
+                                                       AXLE
+
+EBREAKE                BREAKER                         AN OVERLOAD SWITCH
+
+EBRTANL                BREATH ANALYZER/TESTER          A DEVICE THAT TESTS EXHALED BREATH TO INDICATE
+                                                       THE AMOUNT OF ALCOHOL IN THE BODY OR BLOOD
+
+PCASE                  BRIEF/ATTACHE CASE              A PORTABLE, OFTEN FLAT CASE WITH A HANDLE, USED
+                                                       FOR CARRYING PAPERS OR BOOKS
+
+DINTERF                BUFFER/INTERFACE MODULE
+
+EBUGLIG                BUG LIGHT (ZAPPER)              AN OUTDOOR ELECTRIC LIGHT THAT GIVES OFF A
+                                                       USUALLY YELLOW ILLUMINATION DESIGNED NOT TO
+                                                       ATTRACT INSECTS
+
+MBUGLE                 BUGLE
+
+PVEST                  BULLETPROOF VEST
+
+EBLTPRF                BULLETPROOF VEST/BODY ARMOR     AN ITEM OF PERSONAL ARMOR THAT HELPS ABSORB
+                                                       THE IMPACT AND REDUCE OR STOP PENETRATION TO
+                                                       THE BODY FROM FIREARM-FIRED PROJECTILES- AND
+                                                       SHRAPNEL FROM EXPLOSIONS, AND IS WORN ON THE
+                                                       TORSO
+
+DEXTEND                BUS EXTENDER (USED TO BOOST
+                       DATA TRANSMISSION)
+
+DD0CSCN                BUSINESS CARD READER
+
+FCABINE                CABINET, BUFFET, CREDENZA,
+                       SIDEBOARD (EXCLUDING FILING)
+
+0FILECA                CABINET, FILE
+
+ECABLE                 CABLE                           INSULATED WIRE OR WIRES HAVING A PROTECTIVE
+                                                       CASING OFTEN USED FOR TRANSMITTING ELECTRICITY
+                                                       OR TELECOMMUNICATION SIGNALS
+
+DCABLE                 CABLE (TELECOMMUNICATION)
+
+ECABLEL                CABLE LOCATOR                   A DEVICE USED TO ACCURATELY IDENTIFY THE
+                                                       LOCATION AND DEPTH OF UNDERGROUND ELECTRICAL
+                                                       AND COMMUNICATIONS CABLE
+
+RCABLEL                CABLE TV LASHER
+
+0CALCUL                CALCULATOR
+
+
+
+
+                                       June 30, 2026
+                                                                                                          7
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                      Description
+ECALIBR                CALIBRATOR                        EQUIPMENT USED TO ADJUST AN INSTRUMENT
+                                                         ACCURACY, OFTEN ASSOCIATED WITH A SPECIFIC
+                                                         APPLICATION: TEMPERATURE, PRESSURE, WEIGHT
+
+ECALIPE                CALIPER/MICROMETER                AN INSTRUMENT FOR MEASURING THICKNESSES AND
+                                                         INTERNAL OR EXTERNAL DIAMETERS INACCESSIBLE TO A
+                                                         SCALE, CONSISTING USUALLY OF A PAIR OF ADJUSTABLE
+                                                         PIVOTED LEGS
+
+0CAIDB                 CALLER ID BOX/UNIT
+
+CCMCRDR                CAMCORDER                         AN ELECTRONIC DEVICE THAT CONTAINS BOTH A VIDEO
+                                                         CAMERA AND RECORDING DEVICE, GENERALLY A SMALL
+                                                         PORTABLE DEVICE THAT CAN RECORD LIVE VIDEO AND
+                                                         AUDIO THAT SUPPORTS PLAYBACK OF THE CAPTURED
+                                                         VIDEO THROUGH ELECTRONICS SUCH AS A VCR, TV OR
+                                                         COMPUTER
+
+RCAMC0R                CAMCORDER
+
+CCAMERA                CAMERA                            A PHOTOGRAPHIC DEVICE FOR RECORDING OR
+                                                         CAPTURING IMAGES ON FILM, INDIVIDUAL STILL
+                                                         PHOTOGRAPHS OR SEQUENCES OF IMAGES
+                                                         CONSTITUTING VIDEOS OR MOVIES
+
+CBACK                  CAMERA BACK
+
+CB0DY                  CAMERA BODY                       THE PRIMARY PORTION OF THE CAMERA, THE PART
+                                                         OF THE CAMERA THAT YOU HOLD WHEN USING THE
+                                                         CAMERA, WHICH CONTAINS THE CONTROLS, THE LCD,
+                                                         THE INTERNAL IMAGE SENSOR, AND THE ASSOCIATED
+                                                         CIRCUITRY
+
+CCASE                  CAMERA CASE
+
+CCMFLTR                CAMERA FILTER                     A TRANSPARENT DISC OF GELATINE OR GLASS, USUALLY
+                                                         A METAL OR PLASTIC RING FRAME, WHICH CAN BE
+                                                         SCREWED OR CLIPPED INTO THE FRONT OF THE CAMERA
+                                                         LENS, USED TO ELIMINATE OR REDUCE THE INTENSITY
+                                                         OF GIVEN FREQUENCIES FROM LIGHT
+
+CFILTER                CAMERA FILTER                     A TRANSPARENT DISC OF GELATINE OR GLASS, USUALLY
+                                                         A METAL OR PLASTIC RING FRAME, WHICH CAN BE
+                                                         SCREWED OR CLIPPED ONTO THE LENS, USED TO
+                                                         ELIMINATE OR REDUCE THE INTENSITY OF GIVEN
+                                                         FREQUENCIES FROM THE LIGHT LEAVING A LAMP,
+                                                         ENTERING A CAMERA, ETC.
+
+CLENS                  CAMERA LENS                       A CLEAR CURVED PIECE OF GLASS OR PLASTIC THAT
+                                                         IS USED IN CAMERAS TO MAKE THINGS LOOK CLEARER,
+                                                         SMALLER, OR BIGGER
+
+CM0T0RD                CAMERA MOTOR DRIVE
+
+RVIDE0C                CAMERA, VIDEO
+
+SCAMPG                 CAMPING GEAR AND SUPPLIES (NOT EQUIPMENT FOR THE OUTDOOR RECREATIONAL
+                       OTHERWISE CODED)               ACTIVITY OF CAMPING, SUCH AS A TENT, SLEEPING
+                                                         BAGS, OUTDOOR COOKING STOVES, LANTERNS, ETC
+
+H0PENER                CAN OPENER
+
+0VENDIN                CANDY MACHINE
+
+PCAPE                  CAPE
+
+PCHLDST                CAR (CHILD) SEAT
+
+QCREDEN                CARD, FEDERAL OR POLICE
+                       IDENTIFICATION (PHC)
+
+
+
+
+                                     June 30, 2026
+                                                                                                           8
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                      Description
+DCCSCAN                CARD/DOCUMENT READER/           A DEVICE THAT SCANS A HARD COPY AND CONVERTS
+                       SCANNER (CREDIT CARD, PASSPORT, INTO DIGITAL DATA
+                       DOCUMENTS, ETC.)
+
+ECARDI0                CARDIOGRAPH
+
+ECRPT0L                CARPET KNEE KICKER/POWER          A CARPET INSTALLATION TOOL USED TO STRETCH
+                       STRETCHER                         CARPET
+
+HSTEAMC                CARPET/STEAM/SPOT CLEANER RUG/ A MACHINE THAT IS USED FOR CLEANING CARPETS
+                       CARPET SHAMPOOER (INCLUDING
+                       ATTACHMENTS WITH AN UNIQUE
+                       SERIAL OR OAN NUMBER)
+
+DCASE                  CARRYING CASE FOR PORTABLE
+                       COMPUTER (PC)
+
+RCASE                  CARRYING CASE FOR VIDEO
+                       EQUIPMENT
+
+0CART                  CART
+
+DTAPE                  CARTRIDGE TAPE (BLANK, ENCODED)
+
+RCARTRI                CARTRIDGE, STEREO TONE ARM
+
+MCASE                  CASE, MUSICAL INSTRUMENT
+
+0CASHRE                CASH REGISTER
+
+WCUTTER                CASING CUTTER
+
+WR0LLER                CASING ROLLER
+
+RC0MB0                 CASSETTE PLAYER COMBINATION/
+                       RADIO/COMPACT DISC PLAYER
+
+0CASTIN                CASTING MACHINE
+
+LFELINE                CAT
+
+WCATHEA                CATHEAD (BREAKOUT & AMP;
+                       MAKEUP)
+
+DCRT                   CATHODE RAY TUBE/CRT
+
+LCATTLE                CATTLE
+
+WCATW0R                CATWORK
+
+ESEAGUN                CAULKING GUN                      AN HAND OR POWER TOOL THAT EXTRUDES CAULKING
+                                                         MATERIAL THROUGH A NOZZLE
+
+RCDREC0                CD RECORDER
+
+DCDR0MD                CD-ROM DRIVE                      A DRIVE THAT IS CONNECTED TO A COMPUTER THAT
+                                                         WRITES DATA ONTO OR READS DATA FROM A CD-ROM
+
+DDPLCTR                CD-ROM DUPLICATOR
+
+DCELLPH                CELL PHONE/SMARTPHONE AND         A MOBILE PHONE THAT RECEIVES AND MAKES PHONE
+                       ACCESSORIES                       CALLS, TEXT MESSAGES, AND ACCESSES THE INTERNET;
+                                                         INCLUDING THE PHONE'S ACCESSORIES SUCH AS, CASE,
+                                                         BATTERY, CORD, SIM CARD, ETC
+
+
+
+
+                                   June 30, 2026
+                                                                                                        9
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                     Description
+MCELL0                 CELLO MUSICAL INSTRUMENT         A LARGE STRINGED INSTRUMENT OF THE VIOLIN FAMILY
+                                                        THAT PLAYS THE BASS PART THAT IS HELD BETWEEN
+                                                        THE PLAYER'S KNEES WHILE THE PLAYER SITS
+
+ECMIXER                CEMENT MIXER                     A DEVICE THAT HOMOGENEOUSLY COMBINES CEMENT,
+                                                        AGGREGATE SUCH AS, SAND OR GRAVEL, AND WATER TO
+                                                        FORM CONCRETE, TYPICALLY USES A REVOLVING DRUM
+                                                        TO MIX THE COMPONENTS
+
+DCPU                   CENTRAL PROCESSING UNIT (CPU)
+
+JGIFTCE                CERTIFICATE, GIFT
+
+ECHAINS                CHAIN SAW                        A PORTABLE, MECHANICAL SAW WHICH CUTS WITH A SET
+                                                        OF TEETH ATTACHED TO A ROTATING CHAIN THAT RUNS
+                                                        ALONG A GUIDE BAR
+
+FCHAIR                 CHAIR, MASSAGE THERAPY,          A PIECE OF FURNITURE DESIGNED TO ACCOMMODATE
+                       RECLINER                         ONE SITTING OR RECLINING PERSON, PROVIDING
+                                                        SUPPORT FOR THE BACK AND OFTEN THE ARMS AND
+                                                        TYPICALLY STANDING ON FOUR LEGS
+
+PCHALIC                CHALICE
+
+0CHANGE                CHANGER, MONEY, BILL AND COIN
+
+RCHANNE                CHANNEL SELECTOR
+
+0CHECKW                CHECK PROTECTOR
+
+PCHDLST                CHILD RESTRAINT SEAT
+
+ECHISEL                CHISEL                           A WEDGELIKE TOOL WITH A CUTTING EDGE AT THE
+                                                        END OF THE BLADE, OFTEN MADE OF STEEL, USED FOR
+                                                        CUTTING OR SHAPING WOOD, STONE, ETC
+
+ECHR0N0                CHRONOMETER
+
+PLIGHTE                CIGARETTE LIGHTER, E-CIGARETTE
+
+RCBRADI                CITIZENS BAND (CB) RADIO         A PRIVATE, TWO-WAY, SHORT-DISTANCE VOICE
+                                                        COMMUNICATIONS SERVICE, AUTHORIZED 40 CHANNELS
+                                                        BETWEEN 26.965 MHZ AND 27.405 MHZ, FOR PERSONAL
+                                                        OR BUSINESS ACTIVITIES OF THE GENERAL PUBLIC
+
+MCLARIN                CLARINET
+
+ECLIPPE                CLIPPERS
+
+FCL0CK                 CLOCK
+
+HDRYER                 CLOTHES DRYER                    A POWERED HOUSEHOLD APPLIANCE CONSISTING OF
+                                                        A ROTATING DRUM THROUGH WHICH HEATED AIR IS
+                                                        CIRCULATED TO EVAPORATE THE MOISTURE, WHILE THE
+                                                        TUMBLER IS ROTATED TO MAINTAIN AIR SPACE FROM A
+                                                        LOAD OF CLOTHING AND OTHER TEXTILES
+
+HWASHER                CLOTHES WASHER/WASHING           AN HOME APPLIANCE FOR WASHING CLOTHES AND
+                       MACHINE/WASHER                   LINENS AUTOMATICALLY
+
+PC0AT                  COAT
+
+FC0ATRA                COAT RACK/TREE
+
+HC0FFEE                COFFEE, ESPRESSO, CAPPUCCINO     AN APPLIANCE USED TO BREW COFFEE
+                       MAKER/MACHINE
+
+EACC0IL                COIL FOR AIR CONDITIONING UNIT
+
+
+
+
+                                    June 30, 2026
+                                                                                                       10
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                    Description
+KC0IN                  COIN SETS (COMMERATIVE/         A GROUP OF COINS ACCUMULATED IN ONE LOCATION,
+                       COLLECTOR)                      ESPECIALLY FOR SOME PURPOSE OR AS A RESULT OF
+                                                       SOME PROCESS
+
+KC0LLEC                COLLECTIBLE (NOT OTHERWISE      A COLLECTIBLE IS AN ITEM THAT IS WORTH FAR MORE
+                       CODED)                          THAN IT APPEARS BECAUSE OF ITS RARITY AND/OR
+                                                       DEMAND, SUCH AS ANTIQUES, TOYS, COINS, COMIC
+                                                       BOOKS AND STAMPS
+
+KM0DEL                 COLLECTIBLE MINIATURE REPLICA
+                       MODEL
+
+EC0MPAC                COMPACTOR                       A MACHINE OR MECHANISM USED TO REDUCE THE SIZE
+                                                       OF MATERIAL SUCH AS WASTE MATERIAL OR BIO MASS
+                                                       THROUGH COMPACTION
+
+ETAMPER                COMPACTOR, CONSTRUCTION         ENGINE-POWERED, WALK-BEHIND MACHINES THAT
+                                                       IMPART POWERFUL VIBRATORY COMPACTION EFFORT
+                                                       TO LOOSE MATERIALS AND ASPHALT VIA A BOTTOM-
+                                                       MOUNTED STEEL PLATE
+
+EC0MPAS                COMPASS
+
+0TYPEWR                COMPOSER
+
+0C0MPT0                COMPTOGRAPH
+
+DC0NS0L                COMPUTER CONSOLE
+
+DSTAND                 COMPUTER EQUIPMENT STAND
+
+DCMPHRD                COMPUTER HARDWARE (NOT          THE PHYSICAL COMPONENTS THAT MAKE UP A
+                       OTHERWISE CODED)                COMPUTER SYSTEM, SUCH AS THE MONITOR, KEYBOARD,
+                                                       COMPUTER DATA STORAGE, HARD DISK DRIVE (HDD),
+                                                       GRAPHIC CARDS, SOUND CARDS, MEMORY (RAM),
+                                                       MOTHERBOARD, AND ETC., ALL OF WHICH ARE TANGIBLE
+                                                       PHYSICAL OBJECTS
+
+DCMRHRD                COMPUTER HARDWARE (NOT
+                       OTHERWISE CODED)
+
+DHANDC0                COMPUTER ONLY HAND HELD
+                       CONTROLS (FOR GAME CONTROLS
+                       SEE CATEGORY G (GAMES))
+
+DSERVER                COMPUTER SERVER
+
+DSPEAKE                COMPUTER SPEAKERS
+
+DSPEKRS                COMPUTER SPEAKERS
+
+DTERMIN                COMPUTER TERMINAL
+
+EC0NDEN                CONDENSER                       A DEVICE USED FOR CHANGING A GAS INTO A LIQUID OR
+                                                       A DEVICE USED FOR STORING ELECTRICAL ENERGY
+
+0C0NTAI                CONTAINER, STORAGE (NOT
+                       SHIPPING)
+
+WVALVEC                CONTROL VALVE
+
+RHANDC0                CONTROL, VIDEO HAND HELD
+
+EC0NTR0                CONTROLLER                      A DEVICE OR PIECE OF EQUIPMENT USED TO OPERATE A
+                                                       MACHINE, VEHICLE, OR SYSTEM
+
+RVC0NVE                CONVERTER                       A PIECE OF EQUIPMENT THAT CHANGES SOMETHING,
+                                                       SUCH AS RADIO SIGNALS, RADIO FREQUENCIES, OR DATA
+                                                       FROM ONE FORM TO ANOTHER
+
+
+
+
+                                    June 30, 2026
+                                                                                                         11
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                    Description
+RFMC0NV                CONVERTER, FM
+
+EC0NVEY                CONVEYOR                        A MECHANICAL APPARATUS THAT TRANSPORTS
+                                                       MATERIALS, PACKAGES, OR ITEMS BEING ASSEMBLED
+                                                       FROM ONE PLACE TO ANOTHER
+
+0WATERC                COOLER, WATER
+
+0C0PIER                COPY MACHINE
+
+MC0RNET                CORNET
+
+TC0RR0S                CORROSIVE
+
+FC0UCH                 COUCH, DAVENPORT, LOVESEAT,     A PIECE OF FURNITURE FOR LAYING DOWN OR SEATING
+                       SETTEE, SOFA                    FROM TWO TO FOUR PEOPLE, TYPICALLY IN THE FORM
+                                                       OF A BENCH WITH A BACK, SOMETIMES HAVING AN
+                                                       ARMRESTS, AND PARTLY OR WHOLLY UPHOLSTERED
+                                                       AND OFTEN FITTED WITH SPRINGS, TAILORED CUSHIONS,
+                                                       SKIRTS
+
+EC0UNTE                COUNTER
+
+EC0UPLE                COUPLER                         A DEVICE USED TO CONNECT TWO THINGS
+
+JFSC0UP                COUPON, FOOD STAMP              GOVERNMENT BENEFITS PROVIDED TO ELIGIBLE LOW-
+                                                       INCOME PEOPLE FOR BUYING FOOD, ISSUED IN THE
+                                                       FORM OF AN ELECTRONIC BENEFIT TRANSFER CARD,
+                                                       FORMERLY ISSUED IN THE FORM OF PAPER STAMPS OR
+                                                       COUPONS
+
+SSKIMAC                CROSS COUNTRY SKI MACHINE
+
+RCR0SS0                CROSSOVER (FOR STEREO SYSTEM)
+
+PCUFFLN                CUFFLINKS
+
+ETILLER                CULTIVATOR/ROTOTILLER           A MOTORIZED DEVICE HAVING SPINNING BLADES
+                                                       PERPENDICULAR TO THE GROUND AND ARRANGED LIKE
+                                                       SPOKES, USED FOR TILLING SOIL
+
+ECUTTER                CUTTER (NOT OTHERWISE CODED)    A DEVICE OR MACHINE THAT CUTS SURFACES OR
+                                                       MATERIALS
+
+ET0RCH                 CUTTING TORCH                   A DEVICE USED IN OXYGEN, AIR, OR POWDER CUTTING
+                                                       FOR CONTROLLING AND DIRECTING THE GASSES USED
+                                                       FOR PREHEATING AND THE OXYGEN OR POWDER USED
+                                                       FOR CUTTING THE METAL
+
+GVRGLAS                CYBER SHADES
+
+SECYCLE                CYCLE, EXERCISE
+
+MCYMBAL                CYMBAL
+
+DDIGIT                 DATA TABLET, DIGITIZER          A TOOL USED TO CONVERT HAND-DRAWN IMAGES INTO
+                                                       A FORMAT SUITABLE FOR COMPUTER PROCESSING;
+                                                       IMAGES ARE USUALLY DRAWN ONTO A FLAT SURFACE
+                                                       WITH A STYLUS AND THEN APPEAR ON A COMPUTER
+                                                       MONITOR OR SCREEN
+
+RTAPEDE                DECK, TAPE (DECK ONLY)
+
+DTELETE                DECODER MODULE, TELETEXT
+
+EDEFIBR                DEFIBRILLATOR                   A MACHINE USED TO SHOCK THE VICTIM'S HEART AND
+                                                       RESTORE THE HEART'S NORMAL RHYTHMIC PATTERNS
+
+HDEHUMI                DEHUMIDIFIER                    AN APPLIANCE FOR REMOVING MOISTURE FROM THE AIR
+
+
+
+
+                                   June 30, 2026
+                                                                                                        12
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                      Description
+EDEB0WL                DENTAL BOWL
+
+EHANDPI                DENTAL HANDPIECE
+
+EDEPTHF                DEPTHFINDER (ALSO INCLUDES        NAVIGATIONAL INSTRUMENT USED TO MEASURE THE
+                       FATHOMETERS)                      DEPTH OF A BODY OF WATER
+
+RDESCRA                DESCRAMBLER (DECODES SATELLITE
+                       SIGNALS)
+
+FDESK                  DESK
+
+DPRINTE                DESK JET PRINTER
+
+DC0MPUT                DESKTOP/PERSONAL COMPUTER         A STATIONARY COMPUTER DESIGNED FOR REGULAR USE
+                                                         AT A SINGLE LOCATION, SUCH AS A DESK OR TABLE DUE
+                                                         TO ITS SIZE AND POWER REQUIREMENTS
+
+PDIAM0N                DIAMOND
+
+0DICTAT                DICTATING MACHINE
+
+EDIESET                DIE TOOL SET                      CUTTING AND FORMING TOOL USED TO CREATE SCREW
+                                                         THREADS, OR FORM THE FEMALE/MALE PORTION OF THE
+                                                         NUT AND BOLT
+
+CDIGCAM                DIGITAL CAMERA                    A PORTABLE HAND-HELD PHOTOGRAPHIC DEVICE
+                                                         FOR RECORDING, CAPTURING, AND STORING IMAGES
+                                                         DIGITALLY
+
+RDELAY                 DIGITAL DELAY PROCESSOR
+
+RDMMDEV                DIGITAL MULTIMEDIA DEVICE (NOT    A DIGITAL DEVICE THAT CAN RECEIVE, STORE, PROCESS
+                       OTHERWISE CODED)                  OR SEND DIGITAL INFORMATION
+
+DDIGPR0                DIGITAL PR0JECT0R (REQUIRES
+                       C0MPUTER C0NNECTI0N)
+
+RDIGREC                DIGITAL SATELLITE SYSTEM AND      A NETWORK OF SATELLITES THAT BROADCAST DIGITAL
+                       ACCESSORIES (NOT OTHERWISE        DATA
+                       CODED)
+
+RDVREC0                DIGITAL VIDE0 REC0RDER
+
+RDIRECT                DIRECTION FINDER, RADIO
+
+HDISHWA                DISHWASHER                        A MACHINE FOR WASHING DISHES AUTOMATICALLY
+
+DDRIVES                DISK DRIVES
+
+DDISK                  DISK, COMPUTER (HARD, FLOPPY)
+
+RVDISK                 DISK, VIDEO
+
+DD0CSTA                DOCKING STATION FOR ELECTRONIC A WAY OF PLUGGING-IN AN ELECTRONIC DEVICE TO
+                       DEVICES                        COMMON PERIPHERALS; DUE TO DEVICES HAVING
+                                                         DIFFERENT CONNECTORS, POWER SIGNALING, AND
+                                                         USES, DOCKS ARE NOT STANDARDIZED AND ARE
+                                                         THEREFORE OFTEN DESIGNED WITH A SPECIFIC MAKE
+                                                         AND MODEL OF A DEVICE IN MIND
+
+LD0G                   DOG
+
+QD0GTAG                DOG TAG (MILITARY ID) (PHC)
+
+ID0GTAG                DOG TAG/MILITARY ID
+
+KD0LL                  DOLL
+
+
+
+
+                                      June 30, 2026
+                                                                                                          13
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                      Description
+ED00R0P                DOOR OPENER, GARAGE               A MOTORIZED DEVICE THAT OPENS AND CLOSES
+                                                         GARAGE DOORS, SUCH AS SWITCHES ON THE GARAGE
+                                                         WALL OR REMOTE CONTROLS
+
+ED0PPLR                DOPPLER FETAL HEART RATE
+                       MONITOR
+
+ED0SIME                DOSIMETER                         A DEVICE CARRIED ON THE PERSON FOR MEASURING
+                                                         THE QUANTITY OF IONIZING RADIATION, AS GAMMA RAYS,
+                                                         TO WHICH ONE HAS BEEN EXPOSED
+
+0DRAFTI                DRAFTING MACHINE
+
+WDRAWW0                DRAWWORKS
+
+WDRILL                 DRILL (ROCK AND BLASTHOLE)
+
+WC0LLAR                DRILL COLLARS
+
+EDRILLP                DRILL PRESS/VERTICAL DRILL/BENCH A MACHINE TOOL FOR BORING HOLES, HAVING A STAND
+                       DRILL                            AND WORK TABLE WITH FACILITIES FOR LOWERING THE
+                                                         TOOL TO THE WORKPIECE
+
+WMILL                  DRILL, PIPE MILL
+
+EDRILL                 DRILL/DRIVER                      A TOOL FITTED WITH A CUTTING TOOL ATTACHMENT
+                                                         OR DRIVING TOOL ATTACHMENT, USUALLY A DRILL BIT
+                                                         OR DRIVER BIT, USED FOR BORING HOLES IN VARIOUS
+                                                         MATERIALS OR FASTENING VARIOUS MATERIALS
+                                                         TOGETHER WITH THE USE OF FASTENERS
+
+IDRIVER                DRIVER'S LICENSE
+
+EDR0NE                 DRONES/UNMANNED AERIAL VEHICLE AN AIRCRAFT WITHOUT A HUMAN PILOT ABOARD
+                       (OVER .55 LBS REFERENCE THE    OPERATING EITHER UNDER REMOTE CONTROL BY A
+                       VEHICLE FILE VMA/AERO VMO/DRN  HUMAN OPERATOR, OR FULLY OR INTERMITTENTLY
+                                                      AUTONOMOUSLY, BY ONBOARD COMPUTERS
+                       VST/DN)
+
+MDRUM                  DRUM
+
+PDRYER                 DRYER, HAIR
+
+CDRYER                 DRYER, PHOTO
+
+EDUMPT                 DUMPSTER                          A LARGE STEEL WASTE CONTAINER FOR GARBAGE OR
+                                                         CONSTRUCTION WASTE DESIGNED TO BE BROUGHT AND
+                                                         TAKEN AWAY BY A SPECIAL TRUCK OR TO BE EMPTIED
+                                                         INTO A GARBAGE TRUCK
+
+RDVC0MB                DVD VCR COMBO
+
+EDWELLM                DWELL METER
+
+DEMACHI                E MACHINE (DEVICE FOR SENDING E
+                       MAIL)
+
+PEARRIN                EARRINGS
+
+ES0NAR                 ECHO SOUNDER/FISH FINDER/SONAR TYPE OF SOUND NAVIGATION AND RANGING (SONAR)
+                                                         USED TO DETERMINE THE DEPTH OF WATER BY
+                                                         TRANSMITTING SOUND PULSES INTO WATER
+
+EEDGER                 EDGER/ROTARY EDGER                A MACHINE, POWERED BY GASOLINE OR ELECTRICITY,
+                                                         USED TO CLEANLY SEPARATE A LAWN FROM A WALKWAY
+                                                         OR OTHER PAVED SURFACE, SUCH AS A CONCRETE
+                                                         SIDEWALK OR ASPHALT PATH
+
+CEDIT0R                EDITOR, FILM OR VIDEO TAPE
+
+
+
+
+                                      June 30, 2026
+                                                                                                           14
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                     Description
+EEEGMCH                EEG MACHINE
+
+HHNDMXR                ELECTRIC HAND MIXER
+
+ESNAKE                 ELECTRIC SNAKE/SEWER CLEANER     A SLENDER, FLEXIBLE AUGER USED TO DISLODGE CLOGS
+                                                        IN PLUMBING
+
+EP0WERS                ELECTRICAL (NOT OTHERWISE        ANY GADGET USED FOR ELECTRICAL PURPOSES
+                       CODED)
+
+EEKGMCH                ELECTROCARDIOGRAM MACHINE
+
+DELCDCT                ELECTRONIC DICTIONARY
+
+DELCENC                ELECTRONIC ENCYCLOPEDIA
+
+GELGAME                ELECTRONIC GAME (NOT OTHERWISE
+                       CODED)
+
+DCMMIDI                ELECTRONIC MUSICAL INSTRUMENT- A TECHNICAL STANDARD THAT DESCRIBES A PROTOCOL,
+                       DIRECT COMPUTER INTERFACE (MIDI) DIGITAL INTERFACE AND CONNECTORS AND ALLOWS A
+                                                        WIDE VARIETY OF ELECTRONIC MUSICAL INSTRUMENTS,
+                                                        COMPUTERS AND OTHER RELATED DEVICES TO
+                                                        CONNECT AND COMMUNICATE WITH ONE ANOTHER
+
+DELC0RG                ELECTRONIC ORGANIZER
+
+DEREADR                ELECTRONIC READER (E-READER)     A MOBILE ELECTRONIC DEVICE, TYPICALLY HAS
+                                                        WIRELESS CONNECTIVITY FOR DOWNLOADING CONTENT
+                                                        AND CONDUCTING OTHER WEB-BASED TASKS, DESIGNED
+                                                        PRIMARILY FOR THE PURPOSE OF READING DIGITAL E-
+                                                        BOOKS
+
+DELCSPL                ELECTRONIC SPELLER
+
+RTVGAME                ELECTRONIC TELEVISION GAME
+
+LEMU                   EMU
+
+EENGINE                ENGINE, NONVEHICLE (POWERED BY A MACHINE DESIGNED TO CONVERT ONE FORM
+                       FUEL)                          OF ENERGY, SUCH AS GASOLINE OR STEAM INTO
+                                                        MECHANICAL ENERGY
+
+EENGRAV                ENGRAVER                         A DEVICE TO CHASE (LETTERS, DESIGNS, ETC.) ON A
+                                                        HARD SURFACE, AS OF METAL, STONE, OR A GRAIN OF
+                                                        WOOD
+
+CENLARG                ENLARGER
+
+0ENVMCH                ENVELOPE MACHINE
+
+TEPAHAZ                ENVIROMENTAL PROTECTION
+                       AGENCY ENVIROMENTAL
+                       PROTECTION AGENCY S
+
+JSUMM0N                ENVIRONMENTAL SUMMONS
+
+DEPR0MP                EPROM PROGRAMMER
+
+EEQUALI                EQUALIZER (EQUIPMENT NOT
+                       STEREO/SOUND)
+
+REQUALI                EQUALIZER (STEREO/SOUND
+                       EQUIPMENT)
+
+EEVAP0R                EVAPORATOR                       A DEVICE THAT CONVERTS OR CHANGE INTO A VAPOR
+                                                        OR DRAW MOISTURE FROM, AS BY HEATING, LEAVING
+                                                        ONLY THE DRY SOLID PORTION
+
+
+
+
+                                     June 30, 2026
+                                                                                                          15
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                      Description
+RRANGEE                EXPANDER, RANGE
+
+EEXPL0S                EXPLOSIVES                        A REACTIVE SUBSTANCE THAT CONTAINS A GREAT
+                                                         AMOUNT OF POTENTIAL ENERGY THAT CAN PRODUCE AN
+                                                         EXPLOSION IF RELEASED SUDDENLY
+
+TEXPL0S                EXPLOSIVES
+
+CLIGHTM                EXPOSURE METER                    AN INSTRUMENT FOR MEASURING THE AMOUNT OF LIGHT
+                                                         FALLING ON OR BEING REFLECTED BY A SUBJECT, AND
+                                                         USUALLY EQUIPPED TO CONVERT THIS MEASUREMENT
+                                                         INTO USABLE INFORMATION, SUCH AS THE SHUTTER
+                                                         SPEED AND APERTURE SIZE REQUIRED TO TAKE A
+                                                         REASONABLE PHOTOGRAPH
+
+DFAXM0D                EXTERNAL FAX MODEM
+
+VEYEGLA                EYEGLASSES, EYEGLASS FRAMES
+
+0FAX                   FACSIMILE TRANSIEVER
+
+HFAN                   FAN                               ANY DEVICE FOR CREATING A CURRENT OF AIR BY
+                                                         MOVEMENT OF A SURFACE OR NUMBER OF SURFACES,
+                                                         SUCH AS A ROTATING DEVICE CONSISTING OF A NUMBER
+                                                         OF BLADES ATTACHED TO A CENTRAL HUB
+
+LFERRET                FERRET
+
+MVI0LIN                FIDDLE
+
+KFIGURI                FIGURINE/DOLL                     A SMALL-SCALE FIGURE OF A HUMAN BEING OR A SMALL
+                                                         ORNAMENTAL FIGURE OF POTTERY, METAL, PLASTIC,
+                                                         ETC.; STATUETTE
+
+EFILE                  FILE                              A TOOL WHICH TAKES THE FORM OF A STEEL BAR WITH
+                                                         A CASE HARDENED SURFACE AND A SERIES OF SHARP,
+                                                         PARALLEL TEETH
+
+CMAGAZI                FILM MAGAZINE
+
+EFILTER                FILTER                            A DEVICE THAT IS USED TO REMOVE SOMETHING
+                                                         UNWANTED FROM A LIQUID OR GAS THAT PASSES
+                                                         THROUGH IT
+
+DFINGSC                FINGERPRINT SCANNER (HANDHELD /
+                       PORTABLE)
+
+EFINISH                FINISHING MACHINE                 A POWER-OPERATED MACHINE USED TO GIVE THE
+                                                         DESIRED SURFACE TEXTURE TO A CONCRETE SLAB
+
+EFIREEX                FIRE EXTINGUISHER                 A DEVICE THAT CONSISTS OF A HAND-HELD CYLINDRICAL
+                                                         PRESSURE VESSEL CONTAINING AN AGENT WHICH CAN
+                                                         BE DISCHARGED TO EXTINGUISH A FIRE
+
+SFISHIN                FISHING GEAR AND SUPPLIES (NOT    EQUIPMENT USED BY FISHERMEN WHEN FISHING, SUCH
+                       OTHERWISE CODED)                  AS FISHING TACKLE, POLES, REALS, WADERS, ETC
+
+ILICENS                FISHING LICENSE
+
+SFITEXR                FITNESS/EXERCISE EQUIPMENT        AN APPARATUS OR DEVICE USED DURING PHYSICAL
+                                                         ACTIVITY TO ENHANCE THE STRENGTH OR
+                                                         CONDITIONING EFFECTS OF THAT EXERCISE BY
+                                                         PROVIDING EITHER FIXED OR ADJUSTABLE AMOUNTS
+                                                         OF RESISTANCE, OR TO OTHERWISE ENHANCE THE
+                                                         EXPERIENCE OR OUTCOME OF AN EXERCISE ROUTINE
+
+TFLALIQ                FLAMMABLE LIQUIDS
+
+TFLAS0L                FLAMMABLE SOLIDS
+
+
+
+
+                                    June 30, 2026
+                                                                                                        16
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                   Description
+CFLASH                 FLASH                          A DEVICE USED IN PHOTOGRAPHY PRODUCING A FLASH
+                                                      OF ARTIFICIAL LIGHT TO HELP ILLUMINATE A SCENE
+
+EFLASHL                FLASH LIGHT                    A SMALL PORTABLE LAMP USUALLY POWERED BY
+                                                      BATTERIES, OR A BRIGHT LIGHT, SUCH AS A SIGNAL
+                                                      LAMP, THAT FLASHES AT REGULAR INTERVALS
+
+ENE0NSN                FLASHING SIGN FOR ROADWORK
+
+HBUFFER                FLOOR BUFFER/ROTARY FLOOR      AN ELECTRICAL FLOOR SCRUBBER THAT IS USED TO
+                       MACHINE/ELECTRIAL FLOOR        CLEAN AND MAINTAIN NON-CARPETED FLOORS, SUCH AS
+                       SCRUBBER/FLOOR POLISHER        HARDWOOD, MARBLE, TILE OR LINOLEUM
+
+
+MFLUTE                 FLUTE
+
+0F0LDER                FOLDING MACHINE
+
+HF00DPR                FOOD PROCESSOR                 AN APPLIANCE CONSISTING OF A CONTAINER HOUSING
+                                                      INTERCHANGEABLE ROTATING BLADES AND USED
+                                                      FOR PREPARING FOODS, AS BY SHREDDING, SLICING,
+                                                      CHOPPING, OR BLENDING
+
+IFSCARD                FOOD STAMP CARD
+
+HFDMXR                 FOOD/HAND MIXER                A KITCHEN UTENSIL WHICH USES A GEAR-DRIVEN
+                                                      MECHANISM TO ROTATE A SET OF BEATERS IN A
+                                                      BOWL WHICH AUTOMATES THE REPETITIVE TASKS OF
+                                                      STIRRING, WHISKING, BEATING, OR KNEADING THE FOOD
+                                                      TO BE PREPARED IN A BOWL
+
+EF0RENS                FORENSIC KIT
+
+HFREEZE                FREEZER                        A DEVICE OR ROOM FOR FREEZING FOOD OR KEEPING IT
+                                                      FROZEN
+
+EFRNRCM                FREON/REFRIGERANT RECOVERY     A DEVICE WHICH CAN BE USED TO REMOVE
+                       MACHINE                        REFRIGERANT FROM A COOLING SYSTEM SUCH AS
+                                                      A FREEZER, REFRIGERATOR, OR AIR CONDITIONING
+                                                      SYSTEM
+
+HFRYER                 FRYER                          A DEEP PAN FOR FRYING FOODS USUALLY CONSISTING
+                                                      A BASKET TO RAISE FOOD CLEAR OF THE OIL WHEN
+                                                      COOKING IS FINISHED
+
+PFUR                   FUR, STOLE
+
+HFURNAC                FURNACE                        AN ENCLOSURE IN WHICH ENERGY IN A NONTHERMAL
+                                                      FORM IS CONVERTED TO HEAT, AS FOR HEATING
+                                                      HOUSES OR BUILDINGS
+
+FHMFRNT                FURNITURE/FURNISHINGS (NOT     LARGE MOVABLE ITEM, USUALLY IN A ROOM,
+                       OTHERWISE CODED)               WHICH ENHANCE THE ROOM'S CHARACTERISTICS,
+                                                      FUNCTIONALLY OR DECORATIVELY THAT OCCUPY AN
+                                                      INTERIOR SPACE
+
+EFUSE                  FUSE                           A PROTECTIVE DEVICE, USED IN AN ELECTRIC CIRCUIT,
+                                                      CONTAINING A CONDUCTOR THAT MELTS UNDER HEAT
+                                                      PRODUCED BY AN EXCESS CURRENT OR A TUBE, CORD,
+                                                      OR THE LIKE, FILLED OR SATURATED WITH COMBUSTIBLE
+                                                      MATTER, FOR IGNITING AN EXPLOSIVE
+
+EFUSSPL                FUSION SPLICER                 A DEVICE THAT USES AN ELECTRICAL ARC TO WELD TWO
+                                                      PIECES OF FIBER CABLE TOGETHER
+
+HDISP0S                GARBAGE DISPOSAL/DISPOSER      A DEVICE, USUALLY ELECTRICALLY POWERED,
+                                                      INSTALLED UNDER A KITCHEN SINK BETWEEN THE SINK'S
+                                                      DRAIN AND THE TRAP WHICH SHREDS FOOD WASTE INTO
+                                                      PIECES SMALL ENOUGH TO PASS THROUGH PLUMBING
+
+TGGASES                GAS
+
+
+
+
+                                      June 30, 2026
+                                                                                                       17
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                        Description
+HGASFIR                GAS FIREPLACE
+
+EGAUGE                 GAUGE                               AN INSTRUMENT FOR MEASURING A DIMENSION OR FOR
+                                                           TESTING MECHANICAL ACCURACY
+
+EGEIGER                GEIGER COUNTER
+
+PGEMST0                GEM STONES
+
+EGENERA                GENERATOR, NON-AUTOMOBILE           A HAND CRANK DEVICE OR AN INTERNAL COMBUSTION
+                                                           ENGINE THAT CONVERTS MECHANICAL ENERGY TO
+                                                           ELECTRICAL ENERGY FOR USE IN AN EXTERNAL CIRCUIT
+
+JGIFTCD                GIFT CARDS (PREPAID GIFT OR DEBIT
+                       CARDS)
+
+DM0USE                 GLIDE POINT DESKTOP (POINT PAD)
+
+EGP0SYS                GLOBAL POSITIONING SYSTEM (GPS) A GLOBAL SYSTEM OF U.S. NAVIGATIONAL SATELLITES
+                       NAVIGATION SYSTEM               DEVELOPED TO PROVIDE PRECISE POSITIONAL AND
+                                                           VELOCITY DATA AND GLOBAL TIME SYNCHRONIZATION
+                                                           FOR AIR, SEA, AND LAND TRAVEL
+
+LG0AT                  GOAT
+
+SG0LFCA                GOLF CART, NONMOTORIZED             A SMALL CART FOR WHEELING A GOLF BAG AROUND A
+                                                           GOLF COURSE
+
+SG0LFCL                GOLF CLUBS                          LONG-SHAFTED CLUBS WITH WOOD OR METAL HEADS
+                                                           USED TO STRIKE A GOLF BALL
+
+DGRINDB                GRAPHIC INPUT DRAWING BOARD
+
+HGRILL                 GRILL                               A PIECE OF COOKING EQUIPMENT WHERE THE COOKING
+                                                           SURFACE CONSISTS OF AN OPEN RACK OR GRATE WITH
+                                                           A HEAT SOURCE UNDERNEATH; THE HEAT SOURCE CAN
+                                                           BE AN OPEN FLAME (EITHER GAS OR CHARCOAL) OR
+                                                           ELECTRIC
+
+EGRINDE                GRINDING MACHINE/GRINDER            VARIOUS POWER OR MACHINE TOOLS USED FOR
+                                                           GRINDING USING AN ABRASIVE WHEEL AS THE CUTTING
+                                                           TOOL
+
+WRHGUID                GUIDE, RATHOLE
+
+MGUITAR                GUITAR
+
+IGUNLIC                GUN LICENSE/PERMIT                  A LICENSE OR PERMIT FOR A FIREARM OR DANGEROUS
+                                                           WEAPON INCLUDING CARRYING CONCEALED WEAPON
+                                                           LICENSE OR PERMIT
+
+SH0MGYM                GYM, HOME
+
+EGYR0SC                GYROSCOPE
+
+PHRSTYL                HAIRSTYLING TOOLS                   HAIRSTYLING TOOLS, SUCH AS HAIR IRONS (INCLUDING
+                                                           FLAT AND CURLING IRONS), HAIR DRYERS, HAIRBRUSHES
+                                                           (BOTH FLAT AND ROUND), HAIR ROLLERS, DIFFUSERS
+                                                           AND VARIOUS TYPES OF SCISSORS
+
+EHAMMER                HAMMER/POWER HAMMER                 A HAND OR POWER TOOL THAT DELIVERS A BLOW TO AN
+                                                           OBJECT
+
+EHHRADI                HAND HELD RADIO, POLICE
+
+EHDT00L                HAND TOOL (NOT OTHERWISE            ANY TOOL THAT IS NOT A POWER TOOL, ONE POWERED
+                       CODED)                              BY HAND (MANUAL LABOR) RATHER THAN BY AN ENGINE
+
+EHANDTR                HAND TRUCK/DOLLY                    A L-SHAPED BOX-MOVING HANDCART WITH HANDLES AT
+                                                           ONE END, WHEELS AT THE BASE, WITH A SMALL LEDGE
+
+
+
+
+                                    June 30, 2026
+                                                                                                           18
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                     Description
+                                                        TO SET OBJECTS ON, FLAT AGAINST THE FLOOR WHEN
+                                                        THE HAND-TRUCK IS UPRIGHT
+
+GHANDC0                HAND/GAME CONTROLLER             A DEVICE CONNECTED TO A GAME CONSOLE OR
+                                                        COMPUTER BY MEANS OF A WIRE, CORD, OR WIRELESS
+                                                        CONNECTION TO PROVIDE INPUT TO A VIDEO GAME,
+                                                        SUCH AS KEYBOARDS, MICE, GAMEPADS, JOYSTICKS,
+                                                        STEERING WHEELS, LIGHT GUNS, ETC.
+
+PHANDCU                HANDCUFFS
+
+DHNDHLD                HANDHELD DEVICE (NOT OTHERWISE ANY COMPUTING OR ELECTRONIC DEVICE THAT IS
+                       CODED)                         COMPACT AND PORTABLE ENOUGH TO BE HELD AND
+                                                        USED IN ONE OR BOTH HANDS THAT MAY CONTAIN
+                                                        CELLULAR COMMUNICATION, BUT THIS CATEGORY CAN
+                                                        ALSO INCLUDE OTHER COMPUTING DEVICES
+
+EHARDWA                HARDWARE (NOT OTHERWISE          EQUIPMENT THAT CAN BE TOUCHED/HELD BY HAND
+                       CODED)                           SUCH AS SCREWS, NUTS, WASHERS, KEYS, LOCKS,
+                                                        HINGES, LATCHES, HANDLES, WIRE, CHAINS, BELTS,
+                                                        PLUMBING SUPPLIES, ELECTRICAL SUPPLIES, TOOLS,
+                                                        UTENSILS, CUTLERY AND MACHINE PARTS, ETC.
+
+MHARM0N                HARMONICA
+
+MHARP                  HARP
+
+PHAT                   HAT
+
+RHEADSE                HEADSET/EARPHONE                 A DEVICE THAT IS WORN OVER OR INSERTED INTO THE
+                                                        EAR AND IS USED FOR LISTENING TO SOMETHING, SUCH
+                                                        AS MUSIC OR A RADIO WITHOUT HAVING OTHER PEOPLE
+                                                        HEAR IT
+
+PHEARIN                HEARING AID
+
+EHEARTM                HEART MONITOR
+
+HHEATPU                HEAT PUMP                        A DEVICE THAT TAKES HEAT FROM ONE SOURCE AND
+                                                        MOVES IT TO ANOTHER LOCATION THROUGH ELECTRIC
+                                                        OR MECHANICAL MEANS; USED EITHER TO HEAT OR
+                                                        COOL
+
+HSPACEH                HEATER, SPACE                    A DEVICE FOR HEATING AN ENCLOSED AREA
+
+EHEAC00                HEATING/COOLING (NOT OTHERWISE TOOLS AND/OR PARTS OF INDOOR AND VEHICULAR
+                       CODED)                         ENVIRONMENTAL COMFORT WHICH GOAL IS TO PROVIDE
+                                                        THERMAL COMFORT AND ACCEPTABLE INDOOR AIR
+                                                        QUALITY
+
+EHEDGEC                HEDGE TRIMMER                    A MACHINE USED FOR TRIMMING, CUTTING OR PRUNING
+                                                        HEDGES OR SOLITARY SHRUBS
+
+PHELMET                HELMET
+
+EH0E                   HOE
+
+EH0IST                 HOIST/LIFT                       A MANUALLY OPERATED, ELECTRICALLY OR
+                                                        PNEUMATICALLY DRIVEN DEVICE USED FOR LIFTING OR
+                                                        LOWERING A LOAD BY MEANS OF A DRUM OR LIFT-WHEEL
+                                                        AROUND WHICH ROPE OR CHAIN WRAPS
+
+EH0LSTE                HOLSTER                          A SHEATHLIKE CARRYING CASE FOR A FIREARM,
+                                                        ATTACHED TO A BELT, SHOULDER SLING, OR SADDLE
+
+WHYDRAH                HOOK, HYDRA
+
+MH0RN                  HORN
+
+LEQUINE                HORSE (EQUINE)
+
+
+
+
+                                     June 30, 2026
+                                                                                                         19
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                      Description
+EH0RSER                HORSE RACING EQUIPMENT
+
+SH0RSEE                HORSE RIDING/RACING/TRAINING      EQUIPMENT OR ACCESSORY EQUIPPED ON HORSES,
+                       EQUIPMENT                         SUCH AS ADDLES, STIRRUPS, BRIDLES, HALTERS, REINS,
+                                                         BITS, HARNESSES, MARTINGALES, BREASTPLATES, ETC
+
+HH0TTUB                HOT TUB                           A LARGE TUB USUALLY BIG ENOUGH TO ACCOMMODATE
+                                                         SEVERAL PERSONS, THAT IS FILLED WITH HOT AERATED
+                                                         WATER AND OFTEN EQUIPPED WITH A THERMOSTAT
+                                                         AND WHIRLPOOL: USED FOR RECREATION OR PHYSICAL
+                                                         THERAPY AND OFTEN PLACED OUT OF DOORS, AS ON A
+                                                         PORCH
+
+HAPPLNC                HOUSEHOLD APPLIANCES (NOT         DEVICES OR MACHINES, USUALLY HAVING A POWER
+                       OTHERWISE CODED)                  SOURCE, DESIGNED TO PERFORM A SPECIFIC TASK,
+                                                         SUCH AS COOKING OR CLEANING IN THE HOME
+
+HHSWARE                HOUSEWARE (NOT OTHERWISE          THINGS THAT PEOPLE BUY TO USE AT HOME, NON
+                       CODED)                            POWERED, SUCH AS PLATES, KITCHEN UTENSILS,
+                                                         GLASSWARE, OTHER SMALL ARTICLES USED IN A
+                                                         HOUSEHOLD, ESPECIALLY IN THE KITCHEN
+
+HHUMIDI                HUMIDIFIER                        AN HUMIDIFIER IS AN ELECTRIC APPLIANCE THAT
+                                                         GENERATES A WATER MIST OR STEAM AND RELEASES
+                                                         IT INTO THE ROOM WHERE THE UNIT IS LOCATED, OR
+                                                         THROUGH THE WHOLE HOME WHEN A WHOLE-HOUSE
+                                                         IN-LINE HUMIDIFIER IS INSTALLED ON THE HOME'S DUCT
+                                                         WORK
+
+SHUNTG                 HUNTING GEAR AND SUPPLIES (NOT EQUIPMENT USED BY HUNTERS WHEN HUNTING, SUCH
+                       OTHERWISE CODED)               AS ARCHERY SUPPLIES, TREESTANDS, SCOPES, ETC
+                                                         (DOES NOT INCLUDE FIREARMS)
+
+HICREMA                ICE CREAM MACHINE
+
+HICEMAK                ICE MAKER/MACHINE                 A DEVICE FOR MAKING ICE, FOUND INSIDE A HOME
+                                                         FREEZER; A STAND-ALONE APPLIANCE FOR MAKING
+                                                         ICE, OR AN INDUSTRIAL MACHINE FOR MAKING ICE ON A
+                                                         LARGE SCALE
+
+SISKATE                ICE SKATES
+
+HREFRIG                ICEBOX/REFRIGERATOR               A ROOM OR APPLIANCE FOR KEEPING FOOD OR OTHER
+                                                         ITEMS COOL BY MEANS OF ICE OR MECHANICAL
+                                                         REFRIGERATION
+
+ICREDEN                IDENTIFICATION CARD/CREDENTIALS
+
+0IMPRIN                IMPRINT MACHINE
+
+SR0LBLD                IN-LINE SKATES
+
+EINDICA                INDICATOR                         INSTRUMENT FOR MEASURING AND RECORDING
+                                                         VARIATIONS OF PRESSURE IN THE CYLINDER OF AN
+                                                         ENGINE
+
+MSTAND                 INSTRUMENT STAND
+
+RINTERC                INTERCOM
+
+HIR0N                  IRON                              A METAL APPLIANCE WITH A HANDLE AND A WEIGHTED
+                                                         FLAT BOTTOM, USED WHEN HEATED TO PRESS
+                                                         WRINKLES FROM FABRIC
+
+Q0THER                 ITEMS OF IDENTIFICATION (PHC)
+
+EJACK                  JACK                              A MECHANICAL OR HYDRAULIC DEVICE USED A AS A
+                                                         LIFTING DEVICE TO LIFT HEAVY LOADS OR TO APPLY
+                                                         GREAT FORCES, SUCH AS CAR JACK, FLOOR JACK
+                                                         OR GARAGE JACK, WHICH LIFTS VEHICLES SO THAT
+                                                         MAINTENANCE CAN BE PERFORMED
+
+
+
+
+                                    June 30, 2026
+                                                                                                          20
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                     Description
+PJACKET                JACKET
+
+PJEWELR                JEWELRY (NOT OTHERWISE CODED) PERSONAL ORNAMENTS, SUCH AS, CUFFLINKS, LOCKETS,
+                                                        PENDANTS, CHAINS, CHARMS, THAT ARE TYPICALLY
+                                                        MADE FROM OR CONTAIN JEWELS AND PRECIOUS METAL
+
+STREADM                JOGGING MACHINE
+
+WT00LJ0                JOINT TOOL
+
+EJ0INTE                JOINTER                          A MACHINE USED TO PRODUCE A FLAT SURFACE ALONG
+                                                        A BOARD'S LENGTH PRODUCING FLAT EDGES PRIOR
+                                                        TO JOINING THEM EDGE-TO-EDGE TO PRODUCE WIDER
+                                                        BOARDS
+
+DJ0YST                 JOYSTICK, COMPUTER
+
+HJUICER                JUICER
+
+RJUKEB0                JUKEBOX
+
+RKARA0K                KARAOKE
+
+KKPSAKE                KEEPSAKE (NOT OTHERWISE CODED) A SMALL ITEM KEPT IN MEMORY OF THE PERSON WHO
+                                                        GAVE IT OR ORIGINALLY OWNED IT
+
+WKELLYS                KELLY SPINNER
+
+EKEY                   KEY                              A DEVICE THAT IS USED TO OPERATE A LOCK
+
+EKEYMAK                KEY MAKING MACHINE               AN AUTOMATIC, CODE, LASER, MANUAL, AND TUBULAR
+                                                        KEY CUTTING MACHINE THAT IS USED TO CUT THE
+                                                        UNIQUE PROFILE OF A KEY
+
+MKEYB0A                KEYBOARD (MUSICAL INSTRUMENT)
+
+DKEYB0A                KEYBOARD, COMPUTER
+
+DKEYPAD                KEYPAD, COMPUTER
+
+DKEYPUN                KEYPUNCH MACHINE
+
+WKSWIPE                KEYSEAT WIPER
+
+HRANGE                 KITCHEN STOVE/RANGE/OVEN         A KITCHEN APPLIANCE DESIGNED FOR THE PURPOSE
+                                                        OF COOKING FOOD WHICH RELY ON THE APPLICATION
+                                                        OF DIRECT HEAT FOR THE COOKING PROCESS AND MAY
+                                                        ALSO CONTAIN AN OVEN, USED FOR BAKING
+
+HKNIFE                 KNIFE                            AN INSTRUMENT COMPOSED OF A BLADE FIXED INTO A
+                                                        HANDLE, USED FOR CUTTING OR AS A WEAPON
+
+ESHARPE                KNIFE SHARPENER                  A DEVICE CREATING OR REFINING A SHARP EDGE
+                                                        OF APPROPRIATE SHAPE ON A TOOL OR IMPLEMENT
+                                                        DESIGNED FOR CUTTING
+
+ELABEQU                LAB EQUIPMENT (NOT OTHERWISE     TOOLS AND EQUIPMENT USED BY SCIENTISTS
+                       CODED)                           WHO WORK IN A LABORATORY, SUCH AS BUNSEN
+                                                        BURNERS, AND MICROSCOPES AS WELL AS EQUIPMENT
+                                                        SUCH AS OPERANT CONDITIONING CHAMBERS,
+                                                        SPECTROPHOTOMETERS AND CALORIMETERS
+
+0LABELE                LABELER
+
+ELADDER                LADDER                           A STRUCTURE OF WOOD, METAL, OR ROPE, COMMONLY
+                                                        CONSISTING OF TWO SIDEPIECES BETWEEN WHICH
+                                                        A SERIES OF BARS OR RUNGS ARE SET AT SUITABLE
+                                                        DISTANCES, FORMING A MEANS OF CLIMBING UP OR
+                                                        DOWN
+
+
+
+
+                                    June 30, 2026
+                                                                                                         21
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                  Description
+ELAMINA                LAMINATING MACHINE            A DEVICE THAT COVERS A DOCUMENT OR OTHER
+                                                     MATERIAL WITH A PROTECTIVE LAYER ON BOTH SIDES,
+                                                     SUCH AS A PLASTIC FILM, WHICH IS HEAT-BONDED TO
+                                                     THE MATERIAL AND CONFERS INCREASED STRENGTH,
+                                                     DURABILITY AND LONGEVITY TO IT
+
+FLAMP                  LAMP                          A FREE-STANDING PIECE OF FURNITURE FOR GIVING
+                                                     LIGHT, EITHER ONE CONSISTING OF AN ELECTRIC BULB
+                                                     TOGETHER WITH ITS HOLDER AND SHADE OR COVER, OR
+                                                     ONE BURNING GAS OR A LIQUID FUEL AND CONSISTING
+                                                     OF A WICK OR MANTLE AND A GLASS SHADE
+
+0TELEPH                LANDLINE TELEPHONE            A STATIONARY TELECOMMUNICATIONS DEVICE THAT
+                                                     USES A METAL WIRE OR FIBER OPTIC TELEPHONE LINE
+                                                     THAT PERMITS TWO OR MORE USERS TO CONDUCT A
+                                                     CONVERSATION
+
+EM0WER                 LANDSCAPE/LAWN MOWER          WALK/PULL BEHIND MACHINE UTILIZING ONE OR MORE
+                                                     REVOLVING BLADES TO CUT A GRASS SURFACE TO AN
+                                                     EVEN HEIGHT
+
+0LANGUA                LANGUAGE TEACHING MACHINE
+
+SLANTER                LANTERN
+
+DLAPT0P                LAPTOP/NOTEBOOK COMPUTER      A SMALL, PORTABLE PERSONAL COMPUTER THAT
+                                                     COMBINES THE COMPONENTS OF A DESKTOP
+                                                     COMPUTER, INCLUDING THE DISPLAY SCREEN, SMALL
+                                                     SPEAKERS, A KEYBOARD, POINTING DEVICES, A
+                                                     PROCESSOR, WEBCAMS, BUILT-IN MICROPHONES AND
+                                                     MEMORY INTO A SINGLE UNIT
+
+ELASER                 LASER DEVICES                 ANY DEVICE THAT EMITS LIGHT THROUGH A PROCESS
+                                                     OF OPTICAL AMPLIFICATION BASED ON THE STIMULATED
+                                                     EMISSION OF ELECTROMAGNETIC RADIATION
+
+ELMDEVI                LASER MEASURING DEVICES       ANY LASER MEASURING TOOLS, SUCH AS ELECTRONIC
+                                                     TAPE MEASURES, LASER DISTANCE FINDERS, DIGITAL
+                                                     MEASURING DEVICES THAT OFFER TRUE LASER LIGHT
+                                                     FOR MEASURING
+
+SLASGUN                LASER TAG GUN                 LASER GUNS USING LASERS TO HIT REFLECTIVE
+                                                     TARGETS
+
+ELATHE                 LATHE                         A MACHINE FOR SHAPING WOOD, METAL, OR OTHER
+                                                     MATERIAL BY MEANS OF A ROTATING DRIVE THAT TURNS
+                                                     THE PIECE BEING WORKED ON AGAINST CHANGEABLE
+                                                     CUTTING TOOLS
+
+ELAWENF                LAW ENFORCEMENT EQUIPMENT     ARTICLES, IMPLEMENTS, ETC., USED OR NEEDED
+                       (NOT OTHERWISE CODED)         FOR ENFORCING THE LAW, SUCH AS HANDCUFFS,
+                                                     NIGHTSTICKS, UNIFORMS, ETC.
+
+ELEAFBL                LEAF BLOWER
+
+ELKDTCT                LEAK DETECTOR                 A DEVICE USED TO DETERMINE IF AND IN SOME CASES
+                                                     WHERE A LEAK HAS OCCURRED IN SYSTEMS WHICH
+                                                     CONTAIN LIQUIDS AND GASSES
+
+0LECTER                LECTERN
+
+SLEGMAC                LEG DEVELOPING MACHINE
+
+ELEVEL                 LEVEL                         A DEVICE FOR ESTABLISHING A HORIZONTAL PLANE
+                                                     CONSISTING OF A SMALL GLASS TUBE CONTAINING
+                                                     ALCOHOL OR SIMILAR LIQUID AND AN AIR BUBBLE; THE
+                                                     TUBE IS SEALED AND FIXED HORIZONTALLY IN A WOODEN
+                                                     OR METALLIC BLOCK OR FRAME WITH A SMOOTH LOWER
+                                                     SURFACE
+
+JLICTAB                LICENSE PLATE RENEWAL TAB
+
+
+
+
+                                     June 30, 2026
+                                                                                                       22
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                        Description
+QLICENS                LICENSE, FISHING OR HUNTING (PHC)
+
+QDRIVER                LICENSE, MOTORCYCLE OPERATORS
+                       OR PILOTS OR CHAUFFEURS OR
+                       DRIVERS (PHC)
+
+ELIFEPR                LIFE PRESERVER
+
+ELIFT                  LIFT
+
+DLIGHTP                LIGHT, PEN
+
+DLINEFI                LINE FILTER OR PROTECTOR
+
+DPWRPRT                LINE POWER/PROTECTION DEVICE
+
+EL0CK                  LOCK                                A MECHANICAL DEVICE USED TO SECURE ITEMS OF
+                                                           IMPORTANCE
+
+PL0CKET                LOCKET
+
+EL0GSPL                LOG SPLITTER                        A PIECE OF MACHINERY OR EQUIPMENT USED FOR
+                                                           SPLITTING FIREWOOD THAT MAY BE POWERED BY AN
+                                                           ELECTRIC MOTOR DRIVING, HYDRAULIC PUMP, OR BY
+                                                           GASOLINE OR DIESEL ENGINE WITH OR WITHOUT A
+                                                           TRACTOR
+
+EL0RAN                 LONG RANGE NAVIGATION UNIT
+                       (LORAN)
+
+GL0TMAC                LOTTERY MACHINE
+
+JL0TTER                LOTTERY TICKET
+
+PLUGGAG                LUGGAGE
+
+ETEARGA                MACE                                A BRAND OF TEAR GAS, OFTEN USED BY POLICE
+
+GPINBAL                MACHINE, PINBALL
+
+RPR0MPT                MACHINE, PROMPTING
+
+SR0WING                MACHINE, ROWING
+
+GSL0TMA                MACHINE, SLOT
+
+ENEWSRA                MAGAZINE/NEWS STAND RACK
+
+0MAILIN                MAILING MACHINE
+
+MMAND0L                MANDOLIN
+
+HMND0LN                MANDOLIN (KITCHEN TOOL)
+
+PMASSAG                MASSAGER
+
+EMEASUR                MEASURING DEVICE (NOT               A DEVICE USED FOR MEASURING
+                       OTHERWISE CODED)
+
+PMEDALL                MEDALLION
+
+EMEDICA                MEDICAL EQUIPMENT (NOT              EQUIPMENT OF A PHYSICIAN OR MEDICAL INSTITUTION,
+                       OTHERWISE CODED)                    INCLUDING BOOKS, SUPPLIES, AND INSTRUMENTS
+
+EMEG0HM                MEGOHMMETER
+
+MMELL0P                MELLOPHONE
+
+
+
+
+                                      June 30, 2026
+                                                                                                           23
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                     Description
+DMEM0RY                MEMORY MODULE/BOARD
+
+EMETALD                METAL DETECTOR                   AN ELECTRONIC INSTRUMENT WHICH DETECTS THE
+                                                        PRESENCE OF METAL
+
+0P0STAG                METER, POSTAGE
+
+DREADER                MICROFICHE READER
+
+EMICR0M                MICROMETER
+
+RMICR0P                MICROPHONE                       AN INSTRUMENT CAPABLE OF TRANSFORMING SOUND
+                                                        WAVES INTO CHANGES IN ELECTRIC CURRENTS OR
+                                                        VOLTAGE, USED IN RECORDING OR TRANSMITTING
+                                                        SOUND
+
+VMICR0S                MICROSCOPE
+
+H0VEN                  MICROWAVE OVEN                   A KITCHEN APPLIANCE THAT HEATS AND COOKS FOOD
+                                                        BY EXPOSING IT TO MICROWAVE RADIATION IN THE
+                                                        ELECTROMAGNETIC SPECTRUM
+
+EMILLIN                MILLING MACHINE                  CNC-OPERATED, MANUALLY, OR TRADITIONALLY-
+                                                        AUTOMATED MILLING ARE TOOLS DESIGNED TO MACHINE
+                                                        METAL, WOOD, AND OTHER SOLID MATERIALS IN EITHER
+                                                        VERTICAL OR HORIZONTAL ORIENTATION TO CARVE OUT
+                                                        MATERIALS BASED ON A PRE-EXISTING DESIGN
+
+EMITERB                MITER BOX                        A TOOL USED TO GUIDE A HAND SAW TO MAKE PRECISE
+                                                        MITRE CUTS IN A BOARD
+
+RLGTMXR                MIXER, LIGHT
+
+RS0UNDM                MIXER, SOUND                     A DEVICE WHICH TAKES TWO OR MORE AUDIO SIGNALS,
+                                                        MIXES THEM TOGETHER AND PROVIDES ONE OR MORE
+                                                        OUTPUT SIGNALS, AS WELL AS ALLOWING TO ADJUST
+                                                        LEVELS, ENHANCE SOUND WITH EQUALIZATION AND
+                                                        EFFECTS, CREATE MONITOR FEEDS, RECORD VARIOUS
+                                                        MIXES, ETC.
+
+DM0DEM                 MODEM
+
+DM0DM                  MODEM, COMPUTER (INTERNAL OR
+                       EXTERNAL)
+
+0M0MACH                MONEY ORDER/ADD VALUE MACHINE COMPUTERIZED DEVICES USED TO PRINT MONEY
+                                                        ORDERS (CERTIFICATES) AND RECHARGE SMART CARDS
+
+RM0NIT0                MONITOR
+
+PM0RB0X                MORTUARY BOX (USED TO HOLD
+                       CREMATED HUMAN REMAINS.)
+
+PM0RURN                MORTUARY URN (RECEPTACLE TO
+                       HOLD CREMATED HUMAN REMAINS.)
+
+EM0T0R                 MOTOR (POWERED BY ELECTRICITY/ A MACHINE DESIGNED TO CONVERT ONE FORM OF
+                       PNEUMATIC)                     ENERGY, SUCH AS ELECTRICAL OR PNEUMATIC INTO
+                                                        MECHANICAL ENERGY
+
+WMPTANK                MUD PIT TANK
+
+EMULTIM                MULTI-METER/VOM (VOLT-           AN ELECTRONIC MEASURING INSTRUMENT THAT
+                       OHM METER OR VOLT-OHM-           COMBINES SEVERAL MEASUREMENT FUNCTIONS IN ONE
+                       MILLIAMMETER)                    UNIT
+
+
+DD0CSYS                MULTIFUCTIONIAL ALL-IN-ONE       AN OFFICE MACHINE WHICH INCORPORATES THE
+                       PRINTER                          FUNCTIONALITY OF MULTIPLE DEVICES IN ONE, SUCH AS
+                                                        E-MAIL, FAX, PHOTOCOPIER, PRINTER, AND SCANNER
+
+
+
+
+                                      June 30, 2026
+                                                                                                        24
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                      Description
+DMLTPRS                MULTIMEDIA PRESENTER
+
+DMULTIP                MULTIPLEXOR
+
+0MULTIP                MULTIPLIER
+
+RVMULTI                MULTIPLIER, VIDEO
+
+MINSTRU                MUSICAL INSTRUMENT (NOT
+                       OTHERWISE CODED)
+
+MMSCASE                MUSICAL INSTRUMENT CASE           A RECEPTACLE IN WHICH A MUSICAL INSTRUMENT IS
+                                                         HELD OR CARRIED
+
+MMSCKEY                MUSICAL INSTRUMENT KEYBOARD       ANY OF VARIOUS MUSICAL INSTRUMENTS PLAYED
+                                                         BY MEANS OF A PIANOLIKE KEYBOARD, AS A PIANO,
+                                                         ELECTRIC PIANO, OR ORGAN
+
+DPIAN0                 MUSICAL INSTRUMENT-DIRECT
+                       COMPUTER INTERFACE
+
+ESTUDGU                NAIL GUN/NAILER                   TYPE OF TOOL USED TO DRIVE NAILS INTO
+                                                         WOOD OR OTHER MATERIAL USUALLY DRIVEN BY
+                                                         ELECTROMAGNETISM, COMPRESSED AIR (PNEUMATIC),
+                                                         HIGHLY FLAMMABLE GASES SUCH AS BUTANE OR
+                                                         PROPANE, OR, FOR POWDER-ACTUATED TOOLS, A SMALL
+                                                         EXPLOSIVE CHARGE
+
+ENAVIGA                NAVIGATION METER
+
+PNECKLA                NECKLACE
+
+RNEEDLE                NEEDLE, STEREO (EXCLUDES
+                       CARTRIDGE)
+
+ENRVSTM                NERVE STIMULATION UNIT
+
+DNETWRK                NETWORKING HARDWARE/              A DEVICE WHICH IS REQUIRED FOR COMMUNICATION
+                       NETWORKING EQUIPMENT/             AND INTERACTION BETWEEN DEVICES ON A COMPUTER
+                       COMPUTER NETWORKING DEVICES       NETWORK, SUCH AS GATEWAYS, ROUTERS, NETWORK
+                                                         BRIDGES, MODEMS, WIRELESS ACCESS POINTS,
+                                                         NETWORKING CABLES, LINE DRIVERS, ETC
+
+ENIBBLE                NIBBLER                           A TOOL FOR CUTTING SHEET METAL
+
+VNGTVSG                NIGHT VISION GOGGLES
+
+FNGTSTN                NIGHTSTAND/BEDSIDE TABLE          A SMALL TABLE OR CABINET DESIGNED TO STAND
+                                                         BESIDE A BED OR ELSEWHERE IN A BEDROOM
+
+PNGTSTC                NIGHTSTICK
+
+RN0ISER                NOISE REDUCTION UNIT
+
+M0B0E                  OBOE
+
+QLAPELP                OFFICIAL DETAIL LAPEL PIN (PHC)   A LAPEL PIN IS A SMALL PIN WORN ON CLOTHING, OFTEN
+                                                         WORN ON THE LAPEL OF A JACKET WHICH INDICATE
+                                                         WEARER'S AFFILIATION WITH AN ORGANIZATION
+
+E0HMMET                OHMMETER
+
+00RDRMA                ORDERING MACHINE
+
+M0RGAN                 ORGAN
+
+KCARPET                ORIENTAL CARPET/RUG
+
+
+
+
+                                     June 30, 2026
+                                                                                                         25
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                       Description
+E0SCILL                OSCILLOSCOPE
+
+E0UTEQP                OUTDOOR EQUIPMENT (NOT             NON-POWERED OUTDOOR EQUIPMENT
+                       OTHERWISE CODED)
+
+E0XIMET                OXIMETER
+
+WPACKER                PACKER
+
+JPRESCR                PAD, PRESCRIPTION
+
+RPAGER                 PAGER/BEEPER                       A DEVICE THAT BEEPS OR VIBRATES TO ALERT THE
+                                                          PERSON CARRYING IT THAT SOMEONE IS TRYING TO
+                                                          MAKE CONTACT BY TELEPHONE
+
+ESPRAYE                PAINT SPRAYER/SPRAY GUN            A DEVICE SPRAYS A COATING, SUCH AS PAINT, INK,
+                                                          VARNISH, ETC. THROUGH THE AIR ONTO A SURFACE
+
+EPSTRPR                PAINT STRIPPER                     A MECHANICAL OR HEAT DEVICE DESIGNED TO REMOVE
+                                                          PAINT AND OTHER FINISHES AND ALSO TO CLEAN THE
+                                                          UNDERLYING SURFACE
+
+KPAINTI                PAINTING                           AN IMAGE CREATED USING PIGMENTS, SUCH AS PAINT
+                                                          OR PASTELS ON PAPER OR CANVAS
+
+SPARACH                PARACHUTE
+
+EPARKME                PARKING METER                      A DEVICE USED TO COLLECT MONEY IN EXCHANGE FOR
+                                                          THE RIGHT TO PARK A VEHICLE IN A PARTICULAR PLACE
+                                                          FOR A LIMITED AMOUNT OF TIME
+
+JPERMIT                PARKING PERMIT/HANDICAP
+                       PLACARD (HANDICAP LIC PLATES PUT
+                       IN THE LIC PLATE FILE)
+
+IPASSP0                PASSPORT
+
+QPASSP0                PASSPORT (PHC)
+
+VPERISC                PERISCOPE
+
+PPSNLAC                PERSONAL ACCESSORIES (NOT          AN ITEM OFTEN USED TO COMPLETE AN OUTFIT AND
+                       OTHERWISE CODED)                   CHOSEN TO SPECIFICALLY COMPLEMENT THE WEARER'S
+                                                          LOOK, SUCH AS HAND FANS, PARASOLS, UMBRELLAS,
+                                                          CEREMONIAL SWORDS, SASHES, SHAWLS, SCARVES,
+                                                          LANYARDS, MONEY CLIPS, SUNGLASSES, ETC.
+
+DPDASSI                PERSONAL DIGITAL ASSISTANT/        A POCKET-SIZE PORTABLE COMPUTER FOR STORING
+                       ELECTRONIC ORGANIZER               APPOINTMENTS, ADDRESSES, MEMOS, AND TO-DO LISTS
+
+QPINCAR                PERSONAL IDENTIFICATION NUMBER
+                       CARD (PHC)
+
+IPINCAR                PERSONAL INDENTIFICATION (PIN)
+                       CARD % DO NOT ENTER ATM/BANK
+                       CARDS. THIS CODE WILL BE DELETED
+                       1/1/2019
+
+JPH0NEC                PHONE/CALLING CARD                 A PREPAID CARD OR A CREDIT CARD THAT CAN BE USED
+                                                          TO PAY FOR TELEPHONE CALLS
+
+RPH0N0G                PHONOGRAPH (MONO)
+
+RSTERE0                PHONOGRAPH (STEREO)
+
+CPHTTLS                PHOTOGRAPHY TOOLS AND              TOOLS AND EQUIPMENT USED IN THE ACTIVITY OF
+                       EQUIPMENT (NOT OTHERWISE           PHOTOGRAPHING, SUCH AS ANY THING THAT CAN BE
+                       CODED)                             ADDED TO A CAMERA IN ORDER TO MAKE IT MORE
+                                                          USEFUL, VERSATILE, OR ATTRACTIVE, SUCH AS
+
+
+
+
+                                   June 30, 2026
+                                                                                                           26
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                      Description
+                                                         BATTERIES, POWER SUPPLIES, BAGS, CASES, MEMORY
+                                                         CARDS, ETC.
+
+MPIAN0                 PIANO
+
+MPICC0L                PICCOLO
+
+LSWINE                 PIG
+
+WPLPIG                 PIG, PIPELINE
+
+LPIGE0N                PIGEON
+
+PPIN                   PIN (JEWELRY)
+
+EPIPETH                PIPE THREADING MACHINE            A MACHINE THAT IS USED TO CREATE THE THREAD
+                                                         DESIGN ON THE END OF A SECTION OF PIPE
+
+EDRLEQP                PIPELINING/WELL DRILLING          SUPPLIES, TOOLS, OR EQUIPEMENT NEEDED FOR
+                       EQUIPEMENT (NOT OTHERWISE         PIPELING/WELL DRILLING
+                       CODED)
+
+EPLANE                 PLANE
+
+EPLANER                PLANER (POWER TOOL)               A TOOL POWERED BY ELECTRICITY FOR SHAPING WOOD
+
+KPLATE                 PLATE (COLLECTOR SIGNED,
+                       NUMBERED)
+
+HPLATE                 PLATE (NOT OTHERWISE CODED)       A FLAT DISH, TYPICALLY CIRCULAR AND MADE OF CHINA,
+                                                         FROM WHICH FOOD IS EATEN OR SERVED.
+
+RTAPEPL                PLAYER, TAPE (PLAYS ONLY)
+
+EPLIERS                PLIERS                            A TOOL HAVING A PAIR OF PIVOTED JAWS, USED FOR
+                                                         HOLDING, BENDING, OR CUTTING
+
+EPL0W                  PLOW                              A TOOL OR FARM IMPLEMENT USED IN FARMING FOR
+                                                         INITIAL CULTIVATION OF SOIL IN PREPARATION FOR
+                                                         SOWING SEED OR PLANTING TO LOOSEN OR TURN THE
+                                                         SOIL
+
+TP0IS0N                POISONOUS SUBSTANCES
+
+EP0LLGT                POLICE CRUISER MINI-BAR (LIGHTS
+                       ON TOP OF POLICE CRUISERS.)
+
+GPCSTIC                POOL CUE STICK
+
+HP0PC0R                POPCORN MAKER
+
+DDGTMED                PORTABLE DIGITAL MEDIA PLAYER     A PORTABLE CONSUMER ELECTRONICS DEVICE CAPABLE
+                       (MP3 PLAYERS/IPODS)               OF STORING AND PLAYING DIGITAL MEDIA SUCH AS
+                                                         AUDIO, IMAGES, AND VIDEO FILES
+
+DPRTRMV                PORTABLE DRIVE/REMOVABLE DISK     ANY DRIVE OR DISK THAT CAN BE TRANSPORTED
+                                                         BETWEEN COMPUTERS, SUCH AS USB CARD READERS,
+                                                         USB JUMP DRIVES, AND USB EXTERNAL HARD DISK
+                                                         DRIVES
+
+ET0ILET                PORTABLE TOILET/PORTA POTTIES     A DEVICE CONSISTING OF A BOWL, USUALLY WITH
+                                                         A DETACHABLE, HINGED SEAT AND LID, USED FOR
+                                                         DEFECATION AND URINATION
+
+0VALIDA                POST OFFICE VALIDATION PLATE
+
+EP0ST                  POST-HOLE DIGGER
+
+0P0STIN                POSTING MACHINE
+
+
+
+
+                                       June 30, 2026
+                                                                                                          27
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                  Description
+EINVERT                POWER INVERTER/INVERTER       A POWER INVERTER, OR INVERTER, IS AN ELECTRONIC
+                                                     DEVICE OR CIRCUITRY THAT CHANGES DIRECT CURRENT
+                                                     (DC) TO ALTERNATING CURRENT (AC)
+
+EP0WERP                POWER PACK                    AN ELECTRONIC DEVICE THAT SUPPLIES ELECTRIC
+                                                     ENERGY TO AN ELECTRICAL LOAD
+
+EPRRAKE                POWER RAKE/DETHATCHER         A MOTORIZED OR PULL BEHIND DEVICE THAT REMOVES
+                                                     DEAD GRASS FROM A LAWN, USUALLY TO AERATE THE
+                                                     SOIL.
+
+DCMPPSU                POWER SUPPLY UNIT (PSU)       AN INTERNAL HARDWARE COMPONENT OF A COMPUTER
+                                                     THAT CONVERTS MAIN AC TO LOW-VOLTAGE REGULATED
+                                                     DC POWER FOR THE INTERNAL COMPONENTS OF A
+                                                     COMPUTER
+
+DP0WERS                POWER SUPPLY, COMPUTER
+
+EPSWEEP                POWER SWEEPER, OUTDOOR
+
+WT0NG                  POWER TONG
+
+EPWT00L                POWER TOOL (NOT OTHERWISE     A TOOL THAT IS ACTUATED BY AN ADDITIONAL POWER
+                       CODED)                        SOURCE AND MECHANISM OTHER THAN THE SOLELY
+                                                     MANUAL LABOR USED WITH HAND TOOLS
+
+ETR0WEL                POWER TROWEL/FLOAT/TROWEL     A PIECE OF LIGHT EQUIPMENT USED BY CONSTRUCTION
+                       MACHINE                       COMPANIES AND CONTRACTORS, TO APPLY A SMOOTH
+                                                     FINISH TO CONCRETE SLABS
+
+RPREAMP                PREAMPLIFIER
+
+EPRESS                 PRESS                         A HYDRAULIC, PNEUMATIC, OR MECHANICAL TOOL
+                                                     THAT CHANGES THE SHAPE OF A WORKPIECE BY THE
+                                                     APPLICATION OF PRESSURE
+
+EWATERB                PRESSURE/POWER WASHER         A HIGH-PRESSURE MECHANICAL SPRAYER USED TO
+                                                     REMOVE LOOSE PAINT, MOLD, GRIME, DUST, MUD,
+                                                     AND DIRT FROM SURFACES AND OBJECTS SUCH AS
+                                                     BUILDINGS, VEHICLES AND CONCRETE SURFACES
+
+KPRINT                 PRINT (ART)
+
+RVPRINT                PRINTER, VIDEO STILL
+
+EPR0BE                 PROBE                         A DEVICE THAT CAN BE PLACED INSIDE SOMETHING TO
+                                                     TAKE AND CONVEY MEASUREMENTS
+
+CSCREEN                PROJECTION SCREEN             AN INSTALLATION CONSISTING OF A SURFACE AND
+                                                     A SUPPORT STRUCTURE USED FOR DISPLAYING A
+                                                     PROJECTED IMAGE FOR THE VIEW OF AN AUDIENCE,
+                                                     SUCH AS PORTABLE WITH TRIPOD OR FLOOR RISING
+                                                     MODELS
+
+CPR0JEC                PROJECTOR MOVIE/SLIDE         AN OPTICAL DEVICE THAT PROJECTS AN IMAGE OR
+                                                     MOVING IMAGES ONTO A SURFACE, COMMONLY A
+                                                     PROJECTION SCREEN
+
+JTITLE                 PROPERTY TITLE
+
+RPASYST                PUBLIC ADDRESS SYSTEM
+
+EPUMP                  PUMP                          A DEVICE THAT MOVES FLUIDS OR SLURRIES BY
+                                                     MECHANICAL ACTION
+
+WPUMPUN                PUMPING UNIT
+
+EPUNCH                 PUNCH                         A HARD METAL ROD WITH A SHAPED TIP AT ONE END AND
+                                                     A BLUNT BUTT END AT THE OTHER, WHICH IS USUALLY
+                                                     STRUCK BY A HAMMER
+
+
+
+
+                                     June 30, 2026
+                                                                                                       28
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                      Description
+PPURSE                 PURSE
+
+EPYR0ME                PYROMETER
+
+LRABBIT                RABBIT (ANIMAL)
+
+SRACKET                RACKET
+
+EDETECT                RADAR DETECTOR                    AN ELECTRONIC DEVICE USED BY MOTORISTS TO
+                                                         DETECT IF THEIR SPEED IS BEING MONITORED BY POLICE
+                                                         OR LAW ENFORCEMENT USING A RADAR GUN
+
+ERADAR                 RADAR/RADAR GUN                   A DEVICE THAT SENDS OUT RADIO WAVES FOR FINDING
+                                                         OUT THE POSITION AND SPEED OF A MOVING OBJECT
+                                                         (SUCH AS AN AIRPLANE)
+
+RRADI0                 RADIO                             AN ELECTRONIC DEVICE FOR LISTENING TO RADIO
+                                                         PROGRAMMING, CONSISTING OF A TUNER AND
+                                                         SPEAKERS
+
+EXTRMNT                RADIO FREQUENCY HEAT              A DEVICE USED FOR A VARIETY OF HEATING AND DRYING
+                       APPLICATION SYSTEM                APPLICATIONS, SUCH AS CERAMICS, FOAM, FIBERGLASS,
+                                                         COMPOSITES, TEXTILES, ETC
+
+EMETER                 RADIO TELEMETRY SYSTEM            RADIO TECHNOLOGY TO PERFORM REMOTE
+                                                         MEASUREMENTS IN AN EFFORT TO REPORT AND
+                                                         ANALYZE INFORMATION
+
+ETLMTRY                RADIO TELEMETRY SYSTEM            AN ELECTRICAL APPARATUS FOR MEASURING A
+                                                         QUANTITY (AS PRESSURE, SPEED, OR TEMPERATURE),
+                                                         TRANSMITTING THE RESULT ESPECIALLY BY RADIO
+                                                         TO A DISTANT STATION, AND THERE INDICATING OR
+                                                         RECORDING THE QUANTITY MEASURED
+
+RRADITA                RADIO(AM/FM)/TAPE PLAYER,
+                       COMBINATION
+
+RRADICD                RADIO/COMPACT DISC
+                       PLAYER,COMBINATION
+
+RRADI0R                RADIO/RECORD PLAYER,
+                       COMBINATION
+
+RRADI0T                RADIO/TELEVISION, COMBINATION
+
+RRTVREC                RADIO/TELEVISION/RECORD PLAYER,
+                       COMBO
+
+ERAKE                  RAKE                              A HORTICULTURAL IMPLEMENT CONSISTING OF A
+                                                         TOOTHED BAR USED TO COLLECT LEAVES, HAY, GRASS,
+                                                         ETC., AND IN GARDENING, FOR LOOSENING THE SOIL,
+                                                         LIGHT WEEDING AND LEVELLING, REMOVING DEAD
+                                                         GRASS FROM LAWNS
+
+CRANGEF                RANGE FINDER                      AN INSTRUMENT FOR DETERMINING THE DISTANCE OF
+                                                         AN OBJECT FROM THE OBSERVER IN ORDER TO FOCUS A
+                                                         CAMERA
+
+HH00D                  RANGE/EXHAUST HOOD                A DEVICE CONTAINING A MECHANICAL FAN THAT HANGS
+                                                         ABOVE THE STOVE OR COOKTOP IN THE KITCHEN THAT
+                                                         REMOVES AIRBORNE GREASE, COMBUSTION PRODUCTS,
+                                                         FUMES, SMOKE, ODORS, HEAT, AND STEAM FROM THE
+                                                         AIR BY EVACUATION OF THE AIR AND FILTRATION
+
+PSHAVER                RAZOR (SHAVER)
+
+WREAMER                REAMER, (ENLARGERS AND
+                       OPENERS)
+
+
+
+
+                                    June 30, 2026
+                                                                                                          29
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                   Description
+EREBART                REBAR TIER
+
+RRECEIV                RECEIVER                       A DEVICE, SUCH AS A PART OF A RADIO, TELEVISION
+                                                      SET, OR TELEPHONE, THAT CONVERTS INCOMING
+                                                      ELECTROMAGNETIC SIGNALS INTO SOUND, LIGHT, OR
+                                                      ELECTRICAL SIGNALS
+
+MREC0RD                RECORDER (WOODWIND
+                       INSTRUMENT)
+
+RTAPERE                RECORDER, TAPE (RECORDS AND
+                       PLAYS)
+
+SREEL                  REEL
+
+RREM0TE                REMOTE CONTROL                 A COMPONENT OF AN ELECTRONIC DEVICE SUCH AS
+                                                      A TELEVISION SET, DVD PLAYER, OR OTHER HOME
+                                                      APPLIANCE, USED TO OPERATE THE DEVICE WIRELESSLY
+                                                      FROM A SHORT DISTANCE
+
+RRCPLNE                REMOTE CONTROL AIRPLANE
+
+RRCB0AT                REMOTE CONTROL BOAT
+
+RRCCAR                 REMOTE CONTROL CAR
+
+RRCTRCK                REMOTE CONTROL TRUCK
+
+SRCT0Y                 REMOTE/RADIO CONTROL TOYS      BATTERY/GAS-POWERED MODELS, SUCH AS CARS OR
+                                                      TRUCKS, THAT CAN BE CONTROLLED FROM A DISTANCE
+                                                      USING A SPECIALIZED TRANSMITTER OR REMOTE
+
+KREPLIC                REPLICA/MODEL/ART PRINTS       AN EXACT REPRODUCTION, SUCH AS OF A PAINTING OR
+                                                      MODEL, AS IT WAS EXECUTED BY THE ORIGINAL ARTIST
+                                                      OR A COPY OR REPRODUCTION, ESPECIALLY ONE ON A
+                                                      SCALE SMALLER THAN THE ORIGINAL
+
+ERESPIR                RESPIRATOR                     A DEVICE DESIGNED TO PROTECT THE WEARER FROM
+                                                      INHALING HARMFUL DUSTS, FUMES, VAPORS, OR GASES
+
+ERESUSC                RESUSCITATOR
+
+RREVERB                REVERBERATOR
+
+PRING                  RING
+
+ERIVETG                RIVET GUN                      A RIVET GUN IS A TYPE OF TOOL USED TO DRIVE RIVETS
+
+ER0B0T                 ROBOT                          A TASK-PERFORMING MACHINE CAPABLE OF CARRYING
+                                                      OUT A COMPLEX SERIES OF ACTIONS AUTOMATICALLY
+
+SRSKATE                ROLLER SKATES
+
+ER0LLER                ROLLER, HAND-HELD
+
+WDRILLU                ROTARY TABLE, DRILLING UNIT
+
+ER0UTER                ROUTER                         A TOOL USED TO HOLLOW OUT AN AREA IN THE FACE OF
+                                                      A RELATIVELY HARD WORKPIECE, TYPICALLY OF WOOD
+                                                      OR PLASTIC
+
+DR0UTER                ROUTER (WIRELESS / COMPUTER)
+
+HSHAMP0                RUG SHAMPOOER
+
+0SLIDER                RULER, SLIDE
+
+SSADDLE                SADDLE
+
+
+
+
+                                      June 30, 2026
+                                                                                                        30
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                Description
+0SAFE                  SAFE
+
+ESANDBL                SANDBLASTER                 A DEVICE THAT THROWS OUT A BLAST OF STEAM LADEN
+                                                   WITH SAND; USED TO CLEAN OR GRIND HARD SURFACES
+
+ESANDER                SANDER                      A POWER TOOL USED TO SMOOTH SURFACES BY
+                                                   ABRASION WITH SANDPAPER
+
+RSATDSH                SATELLITE DISH
+
+ESAW                   SAW                         A HAND OR POWER TOOL USED TO CUT HARD MATERIAL
+                                                   AND EQUIPPED USUALLY WITH A TOOTHED BLADE OR
+                                                   DISK
+
+MSAX0PH                SAXOPHONE
+
+ESCAFF0                SCAFFOLDING/STAGING         A TEMPORARY STRUCTURE USED TO SUPPORT A WORK
+                                                   CREW AND MATERIALS TO AID IN THE CONSTRUCTION,
+                                                   MAINTENANCE AND REPAIR OF BUILDINGS, BRIDGES AND
+                                                   ALL OTHER MAN MADE STRUCTURES, IN ADAPTED FORMS
+                                                   GRANDSTAND SEATING, CONCERT STAGES, ETC
+
+ESCALES                SCALES                      AN INSTRUMENT USED TO MEASURE WEIGHT
+
+RSCANNE                SCANNER                     A COMMUNICATIONS RECEIVER THAT IS PRIMARILY
+                                                   INTENDED FOR MONITORING VHF AND UHF LANDMOBILE
+                                                   RADIO SYSTEMS THAT CAN AUTOMATICALLY TUNE, OR
+                                                   SCAN, TWO OR MORE DISCRETE FREQUENCIES
+
+HSCISS0                SCISSORS
+
+SSC00TE                SCOOTER                     A TWO-WHEELED STEERABLE MACHINE PROPELLED BY
+                                                   FOOT OR ELECTRIC-POWERED WITH MANUAL CAPABILITY
+                                                   AND STEERED BY HANDLEBARS; FULLY ELECTRIC
+                                                   SCOOTERS SHOULD BE ENTERED INTO THE VEHICLE FILE
+
+VSC0PE                 SCOPE (GUN OR TELESCOPE)
+
+ESCREWG                SCREW GUN/SCREWDRIVER
+
+ESCREWD                SCREWDRIVER/SCREW GUN       A TOOL, MANUAL OR POWERED, FOR DRIVING OR
+                                                   REMOVING SCREWS
+
+ESCRUBB                SCRUBBER                    A DIVERSE GROUP OF AIR POLLUTION CONTROL DEVICES
+                                                   THAT CAN BE USED TO REMOVE SOME PARTICULATES
+                                                   AND/OR GASES FROM INDUSTRIAL EXHAUST STREAMS
+
+SSEASC0                SEA SCOOTER
+
+ESEISMG                SEISMOGRAPH
+
+ESENS0R                SENSOR                      AN OBJECT WHOSE PURPOSE IS TO DETECT EVENTS OR
+                                                   CHANGES IN ITS ENVIRONMENT, AND THEN PROVIDE A
+                                                   CORRESPONDING OUTPUT
+
+ESEPARA                SEPARATOR
+
+ESEWERC                SEWER CLEANER
+
+HSEWING                SEWING MACHINE              A MACHINE USED TO STITCH FABRIC AND OTHER
+                                                   MATERIALS TOGETHER WITH THREAD, RANGING FROM
+                                                   MACHINES WITH A SHUTTLE FOR A SPOOL OF THREAD
+                                                   AND A NEEDLE FOR SEWING GARMENTS TO INDUSTRIAL
+                                                   MACHINES FOR SEWING LEATHER, BOOK PAGES
+                                                   TOGETHER, ETC
+
+ESEXTAN                SEXTANT                     A DOUBLY REFLECTING NAVIGATION INSTRUMENT USED
+                                                   TO MEASURE THE ANGLE BETWEEN ANY TWO VISIBLE
+                                                   OBJECTS
+
+
+
+
+                                   June 30, 2026
+                                                                                                 31
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                      Description
+WSSHAKE                SHAKER, SHALE
+
+ESHEARS                SHEARS
+
+LSHEEP                 SHEEP
+
+WSH0CK                 SHOCK
+
+ESH0VEL                SHOVEL                            A LARGE MECHANICAL DEVICE FOR HEAVY DIGGING OR
+                                                         EXCAVATION
+
+ESHREDD                SHREDDER (PAPER, ETC.)            A MACHINE USED FOR CUTTING THINGS INTO VERY
+                                                         SMALL PIECES
+
+JSIGN                  SIGN
+
+SSKATEB                SKATE, BOARD/ICE/IN-LINE/ROLLER   TO GLIDE OR MOVE ALONG ON SKATES
+
+SSKIS                  SKIS                              A NARROW STRIP OF SEMI-RIGID MATERIAL WORN
+                                                         UNDERFOOT TO GLIDE OVER SNOW AND WATER
+
+ESLICER                SLICER
+
+HMEATSL                SLICING MACHINE/DELI SLICER/      A MACHINE USED TO SLICE FOOD, USUALLY WITH AN
+                       SLICER/MEAT SLICER                ELECTRICALLY DRIVEN BAND KNIFE OR CIRCULAR KNIFE
+
+ISMARTC                SMART CARD                        A SMALL ELECTRONIC DEVICE ABOUT THE SIZE OF A
+                                                         CREDIT CARD THAT_CONTAINS ELECTRONIC MEMORY,
+                                                         AND POSSIBLY AN EMBEDDED INTEGRATED CIRCUIT
+                                                         USED FOR STORING INFORMATION, SUCH AS A PATIENT'S
+                                                         MEDICAL RECORDS, DIGITAL CASH, GENERATING
+                                                         NETWORK IDS (TOKEN)
+
+QSMARTC                SMART CARD (PHC)
+
+ESM0KED                SMOKE ALARM
+
+ESN0WBL                SNOW BLOWER                       A MACHINE FOR REMOVING SNOW FROM AN AREA
+                                                         WHERE IT IS NOT WANTED
+
+ESN0WPL                SNOW PLOW (NONRIDING)             A DEVICE INTENDED FOR MOUNTING ON A VEHICLE,
+                                                         USED FOR REMOVING SNOW AND ICE FROM OUTDOOR
+                                                         SURFACES
+
+SSB0ARD                SNOWBOARD
+
+ISSCARD                SOCIAL SECURITY CARD
+
+QSSCARD                SOCIAL SECURITY CARD (PHC)
+
+ES0CKET                SOCKET SET                        A TYPE OF WRENCH THAT USES SEPARATE, REMOVABLE
+                                                         SOCKETS TO FIT DIFFERENT SIZES OF NUTS AND BOLTS
+
+ES0DCUT                SOD CUTTER                        A GAS OR ELECTRIC MACHINE HAVING SEVERAL BLADES
+                                                         WHICH CUT SOD
+
+DSFTWRE                SOFTWARE
+
+ES0LARC                SOLAR ENERGY                      ANY SOLAR DEVICE THAT ASSIST WITH CONVERTING
+                                                         ENERGY PROVIDED BY THE SUN TO ELECTRICITY OR
+                                                         LIGHT
+
+ES0LARP                SOLAR PANEL, SUN TRACKER
+
+ES0LDER                SOLDERING GUN                     ELECTRICALLY POWERED TOOL FOR SOLDERING METALS
+                                                         USING TIN-BASED SOLDER TO ACHIEVE A STRONG
+                                                         MECHANICAL BOND WITH GOOD ELECTRICAL CONTACT
+
+MS0USAP                SOUSAPHONE
+
+
+
+
+                                    June 30, 2026
+                                                                                                        32
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                   Description
+RSPEAKE                SPEAKERS                       A DEVICE WITH BUILT-IN SPEAKERS TO WHICH A
+                                                      PORTABLE MEDIA PLAYER CAN BE ATTACHED, ALLOWING
+                                                      AUDIO FILES TO BE PLAYED OUT LOUD
+
+DSPEECH                SPEECH SYNTHESIZER (VOICE)
+
+ESPHYGM                SPHYGMOMANOMETER
+
+WSPIDER                SPIDER/PIPE SUPPORT
+
+WSPINWR                SPINNING WRENCH
+
+SSP0RTS                SPORTS EQUIPMENT (NOT          EQUIPMENT NEEDED TO PARTICIPATE IN A PARTICULAR
+                       OTHERWISE CODED)               SPORT, SUCH AS BASEBALL, TENNIS, GOLF, BOWLING,
+                                                      WRESTLING, BOXING, ETC
+
+ESP0TLI                SPOTLIGHT                      A STRONG, FOCUSED LIGHT THROWN UPON A
+                                                      PARTICULAR SPOT, USED FOR ILLUMINATING OBJECTS
+
+ESPRAYG                SPRAY GUN
+
+ESPREAD                SPREADER                       A MACHINE OR DEVICE USED FOR SCATTERING BULK
+                                                      MATERIALS, OVER A RELATIVELY WIDE AREA
+
+ESPRINK                SPRINKLER                      A SYSTEM OF UNDERGROUND/OVERHEAD PIPES
+                                                      ATTACHED TO SPRINKLER HEADS THAT RELEASE
+                                                      WATER AUTOMATICALLY WHEN A PREDETERMINED
+                                                      TEMPERATURE/TIME HAS BEEN REACHED, USED TO
+                                                      WATER LAWNS, EXTINGUISH FIRES, ETC
+
+WSTABIL                STABILIZER
+
+JSTAMP                 STAMP (EXCLUDING FOOD STAMP)
+
+0STAMPM                STAMP MACHINE
+
+RSTAND                 STAND, VIDEO EQUIPMENT
+
+ESTAPLE                STAPLE GUN/POWERED STAPLER     A MACHINE USED TO DRIVE HEAVY METAL STAPLES INTO
+                                                      WOOD, PLASTIC, OR MASONRY
+
+SBCYCLE                STATIONARY EXERCISE BICYCLE
+
+0STENCI                STENCIL MACHINE
+
+0STEN0T                STENOTYPE
+
+SSTPEXM                STEP-EXERCISE MACHINE
+
+RSTFPLT                STEREO FACE PLATE
+
+RRACK                  STEREO RACK SYSTEM
+
+ESTETH0                STETHOSCOPE
+
+SST0PWA                STOP WATCH/CLOCK               A TIMEPIECE DESIGNED TO MEASURE THE AMOUNT
+                                                      OF TIME ELAPSED FROM A PARTICULAR TIME WHEN
+                                                      IT IS ACTIVATED TO THE TIME WHEN THE PIECE IS
+                                                      DEACTIVATED
+
+ETANK                  STORAGE TANK                   CONTAINERS THAT HOLD LIQUIDS, COMPRESSED GASES
+                                                      (GAS TANK) OR MEDIUMS USED FOR THE SHORT- OR
+                                                      LONG-TERM STORAGE
+
+DSTREAM                STREAMING DEVICE
+
+ESTR0BE                STROBE OR MIXER LIGHT          A DEVICE FOR STUDYING THE MOTION OF A BODY,
+                                                      ESPECIALLY A BODY IN RAPID REVOLUTION OR
+                                                      VIBRATION, BY MAKING THE MOTION APPEAR TO SLOW
+
+
+
+
+                                    June 30, 2026
+                                                                                                       33
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                     Description
+                                                        DOWN OR STOP, AS BY PERIODICALLY ILLUMINATING
+                                                        THE BODY OR VIEWING IT THROUGH WIDELY SPACED
+                                                        OPENINGS IN A REVOLVING DISK
+
+PSTRLLR                STROLLER
+
+ESTUNGN                STUN GUN                         A DEVICE USE TO STUN OR IMMOBILIZE AN INDIVIDUAL
+                                                        WHEN HELD AGAINST A PERSON. THIS DEVICE DOES NOT
+                                                        EXPEL OR PROJECTILE BY AIR.
+
+WSUB                   SUB (KICK, SHEAR, PIN, ETC.)
+
+SSURFB0                SURFBOARD
+
+ESWITCH                SWITCH (ALL TYPES)               A DEVICE THAT STARTS OR STOPS THE FLOW TO
+                                                        SOMETHING
+
+WSWIVEL                SWIVEL, POWER
+
+SSW0RD                 SWORD
+
+MSYNTHE                SYNTHESIZER
+
+FTABLE                 TABLE                            A PIECE OF FURNITURE WITH A FLAT TOP AND ONE OR
+                                                        MORE LEGS, PROVIDING A LEVEL SURFACE ON WHICH
+                                                        OBJECTS MAY BE PLACED, AND THAT CAN BE USED FOR
+                                                        SUCH PURPOSES AS EATING, WRITING, WORKING, OR
+                                                        PLAYING GAMES
+
+GGMTBLE                TABLE TOP & MULTI-GAME TABLE     A TABLE DESIGNED FOR PLAYING A GAME CONSISTING
+                                                        OF GAME BOARD AND/OR SLOTS, SUCH AS POOL, PING-
+                                                        PONG, BLACKJACK, CRAPS, ROULETTE, ETC
+
+DTABLET                TABLET COMPUTER, MOBILE
+                       COMPUTER USUALLY WITH A
+                       TOUCHSCREEN OR PEN-ENABLED
+                       INTERFACE
+
+0TABULA                TABULATING MACHINE/UNIT RECORD
+                       EQUIPMENT/ELECTRIC ACCOUNTING
+
+ETACHMT                TACHOMETER
+
+JTMPRSS                TAMPER-RESISTANT SECURITY        PAPER TO PREVENT UNAUTHORIZED COPIES AND
+                       PAPER                            SAFEGUARD CONFIDENTIAL BUSINESS, LEGAL,
+                                                        HEALTHCARE AND PERSONAL DOCUMENTS BY
+                                                        CONTAINING BACKGROUND WITH ERASURE/COPYING
+                                                        PROTECTION
+
+ETAPER                 TAPE MACHINE, AUTOMATIC
+
+ETAPEME                TAPE MEASURE                     A FLEXIBLE RULER CONSISTING OF A RIBBON OF CLOTH,
+                                                        PLASTIC, FIBER GLASS, OR METAL STRIP WITH LINEAR-
+                                                        MEASUREMENT MARKINGS
+
+RVTAPE                 TAPE, VIDEO
+
+ETATT00                TATTOO MACHINE                   A HAND-HELD DEVICE USED TO CREATE A TATTOO WHICH
+                                                        USES ELECTROMAGNETIC COILS TO MOVE AN ARMATURE
+                                                        BAR UP AND DOWN WITH BARRED NEEDLE GROUPING
+                                                        THAT PUSHES INK INTO THE SKIN
+
+0TELREC                TELERECORDER
+
+DTELETY                TELETYPEWRITER
+
+RTELEVI                TELEVISION                       A TELECOMMUNICATION MEDIUM USED FOR
+                                                        TRANSMITTING SOUND WITH MOVING IMAGES
+
+RTELDVD                TELEVISION/DVD COMBINATION
+
+
+
+
+                                     June 30, 2026
+                                                                                                        34
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                     Description
+RTELVCR                TELEVISION/VIDEO CASSETTE
+                       RECORDER,COMBINATION
+
+STENT                  TENT
+
+ETESTER                TESTER                           A DEVICE THAT TESTS OR IS USED FOR TESTING
+
+ETHE0D0                THEODOLITE
+
+ETHERM0                THERMOMETER                      A DEVICE THAT MEASURES TEMPERATURE
+
+ETHERMS                THERMOSTAT                       A COMPONENT OF WHICH SENSES THE TEMPERATURE
+                                                        OF A SYSTEM SO THAT THE SYSTEM'S TEMPERATURE IS
+                                                        MAINTAINED NEAR A DESIRED SETPOINT
+
+ETHREAD                THREADER
+
+DTHUMBD                THUMB DRIVE
+
+JTICKET                TICKET (NOT OTHERWISE CODED)
+
+ETIMECL                TIME CLOCK                       A MECHANICAL OR ELECTRONIC TIMEPIECE USED
+                                                        TO ASSIST IN TRACKING THE HOURS WORKED BY AN
+                                                        EMPLOYEE OF A COMPANY
+
+ETIMER                 TIMER                            A SWITCH OR REGULATOR THAT CONTROLS OR
+                                                        ACTIVATES AND DEACTIVATES ANOTHER MECHANISM AT
+                                                        SET TIMES
+
+ETIMING                TIMING LIGHT                     A STROBOSCOPE USED TO DYNAMICALLY SET THE
+                                                        IGNITION TIMING OF AN OTTO CYCLE OR SIMILAR
+                                                        INTERNAL COMBUSTION ENGINE EQUIPPED WITH A
+                                                        DISTRIBUTOR
+
+HT0ASTE                TOASTER
+
+HTST0VN                TOASTER OVEN
+
+HT0ILET                TOILET, PORTABLE/STANDARD (ALL   A DEVICE CONSISTING OF A BOWL, USUALLY WITH
+                       TYPES)                           A DETACHABLE, HINGED SEAT AND LID, USED FOR
+                                                        DEFECATION AND URINATION
+
+ET0NGS                 TONGS                            A TOOL USED TO GRIP AND LIFT OBJECTS
+
+ET0N0ME                TONOMETER
+
+ET00LB0                TOOLBOX                          A CASE FOR CARRYING OR STORING TOOLS
+
+TT0RM                  TOXIC CHEMICAL                   ANY SUBSTANCE WHICH MAY BE HARMFUL TO THE
+                                                        ENVIRONMENT OR HAZARDOUS TO YOUR HEALTH IF
+                                                        INHALED, INGESTED OR ABSORBED THROUGH THE SKIN,
+                                                        SUCH AS HOUSEHOLD CLEANERS AND BY-PRODUCT OF
+                                                        METABOLISM; VENOM, ARSENIC, RICIN, DRAIN CLEANER,
+                                                        PESTICIDES, ETC
+
+KSCARDS                TRADING CARDS/BASEBALL CARDS     A TRADING CARD WITH A PICTURE OF AN ATHLETE AND
+                                                        INFORMATION ABOUT THEIR PLAYING
+
+ETRAFFI                TRAFFIC CONTROL/ROAD             TRAFFIC CONTROL DEVICES ARE MARKERS, SIGNS AND
+                       CONSTRUCTION DEVICES/TRAFFIC     SIGNAL DEVICES USED TO INFORM, GUIDE AND CONTROL
+                       COUNTER                          TRAFFIC, SUCH AS BARRIERS, BARRICADES, BARRELS,
+                                                        SIGNS, CONES, DRUMS, TRAFFIC LIGHTS, ETC.
+
+RTRANSC                TRANSCEIVER                      A DEVICE COMPRISING BOTH A TRANSMITTER AND A
+                                                        RECEIVER THAT ARE COMBINED AND SHARE COMMON
+                                                        CIRCUITRY OR A SINGLE HOUSING
+
+0TRANSC                TRANSCRIBER
+
+
+
+
+                                      June 30, 2026
+                                                                                                          35
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                     Description
+ETRANSD                TRANSDUCER                       AN ELECTRONIC DEVICE THAT CONVERTS ENERGY
+                                                        FROM ONE FORM TO ANOTHER, SUCH AS MICROPHONES,
+                                                        LOUDSPEAKERS, THERMOMETERS, POSITION AND
+                                                        PRESSURE SENSORS, AND ANTENNA
+
+ETRANSF                TRANSFORMER                      AN ELECTRICAL DEVICE THAT TRANSFERS ELECTRICAL
+                                                        ENERGY BETWEEN TWO OR MORE CIRCUITS THROUGH
+                                                        ELECTROMAGNETIC INDUCTION
+
+ETRANSI                TRANSIT THEODOLITE               SURVEYING DEVICE HAVING A TELESCOPIC SIGHT FOR
+                                                        ESTABLISHING HORIZONTAL AND SOMETIMES VERTICAL
+                                                        ANGLES
+
+RTRANSM                TRANSMITTER                      AN ELECTRONIC DEVICE WITH THE AID OF AN ANTENNA,
+                                                        PRODUCES RADIO WAVES THAT ARE A NECESSARY
+                                                        COMPONENT OF MANY ELECTRONIC DEVICES THAT
+                                                        COMMUNICATE BY RADIO, SUCH AS CELL PHONES,
+                                                        WIRELESS COMPUTER NETWORKS, BLUETOOTH
+                                                        ENABLED DEVICES, AND TWO-WAY RADIOS
+
+ETRANSP                TRANSPONDER                      A RADIO OR RADAR SET THAT UPON RECEIVING A
+                                                        DESIGNATED SIGNAL EMITS A RADIO SIGNAL OF ITS OWN
+                                                        AND THAT IS USED ESPECIALLY FOR THE DETECTION,
+                                                        IDENTIFICATION, AND LOCATION OF OBJECTS AND IN
+                                                        SATELLITES FOR RELAYING COMMUNICATIONS SIGNALS
+
+HTRASHB                TRASH BARREL/TRASH OR GARBAGE A CONTAINER FOR TEMPORARILY STORING WASTE, AND
+                       CAN                           IS USUALLY MADE OUT OF METAL OR PLASTIC
+
+HC0MPAC                TRASH COMPACTOR                  AN APPLIANCE THAT CRUSHES AND COMPRESSES TRASH
+                                                        INTO SMALL CONVENIENT BUNDLES
+
+HTRSHCM                TRASH COMPACTOR                  AN APPLIANCE THAT CRUSHES AND COMPRESSES TRASH
+                                                        INTO SMALL CONVENIENT BUNDLES
+
+JMTPASS                TRAVEL PASS                      BUS, TRAIN, SUBWAY, MASS TRANSIT, EZ; A CARD,
+                                                        TICKET, PERMIT, OR ELECTRONIC TOLL-COLLECTION
+                                                        SYSTEM ENTITLING THE HOLDER TO TRAVEL TYPICALLY
+                                                        FOR A PARTICULAR PERIOD OF TIME OR WITHIN A
+                                                        PARTICULAR AREA; E-Z, BUSS, TRAIN, MASS TRANSIT,
+                                                        SUBWAY PASSES
+
+STREEST                TREE STAND
+
+ETRENCH                TRENCHER/DITCH WITCH             A PIECE OF CONSTRUCTION EQUIPMENT USED TO DIG
+                                                        TRENCHES, ESPECIALLY FOR LAYING PIPES OR CABLES,
+                                                        FOR INSTALLING DRAINAGE, OR IN PREPARATION FOR
+                                                        TRENCH WARFARE
+
+ETRIMME                TRIMMER/CIPPERS/SHEARS/          VARIOUS IMPLEMENTS OR MACHINES THAT CUT WITH
+                       SCISSORS                         CUTTING, CLIPPING, OR SHEARING ACTIONS
+
+CTRIP0D                TRIPOD                           AN ADJUSTABLE AND USUALLY COLLAPSIBLE THREE-
+                                                        LEGGED STAND TO WHICH A CAMERA, ETC, CAN BE
+                                                        ATTACHED TO HOLD IT STEADY
+
+MTR0MB0                TROMBONE
+
+MTRUMPE                TRUMPET
+
+MTUBA                  TUBA
+
+RTUNER                 TUNER
+
+RTURNTA                TURNTABLE                        A CIRCULAR REVOLVING PLATE SUPPORTING A
+                                                        PHONOGRAPH RECORD AS IT IS PLAYED
+
+0TYPESE                TYPESETTER
+
+MUKULEL                UKULELE
+
+
+
+
+                                     June 30, 2026
+                                                                                                         36
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                    Description
+EULTRS                 ULTRA SOUND MACHINE             A DEVICE THAT USES HIGH FREQUENCY SOUND WAVES
+                                                       TO CREATE AN IMAGE OF SOME PART OF THE INSIDE OF
+                                                       THE BODY
+
+PUNIF0R                UNIF0RM
+
+HVACATT                VACUUM CLEANER ATTACHMENTS
+                       (UNIQUE SERIAL OR OAN NUMBER)
+
+HVACUUM                VACUUM CLEANER/SWEEPER/         A DEVICE THAT USES AN AIR PUMP TO CREATE A
+                       ELECTRIC BROOM (INCLUDING       PARTIAL VACUUM TO SUCK UP DUST AND DIRT, USUALLY
+                       ATTACHMENTS WITH AN UNIQUE      FROM FLOORS, AND FROM OTHER SURFACES SUCH AS
+                                                       UPHOLSTERY AND DRAPERIES
+                       SERIAL OR OAN NUMBER)
+
+EVALVE                 VALVE                           A MECHANICAL DEVICE THAT CONTROLS THE FLOW OF
+                                                       LIQUID, GAS, ETC., BY OPENING AND CLOSING
+
+WVALVE                 VALVE, WELL-DRILLING
+
+FVASE                  VASE (NON-COLLECTOR)
+
+KVASE                  VASE, COLLECTOR
+
+EVIBRAT                VIBRATOR TOOL/CONCRETE          A MECHANICAL DEVICE TO GENERATE VIBRATIONS
+                       VIBRATOR                        WITH AN UNBALANCED MASS ON ITS DRIVESHAFT TO
+                                                       CONSOLIDATE FRESHLY POURED CONCRETE SO THAT
+                                                       TRAPPED AIR AND EXCESS WATER ARE RELEASED
+                                                       SO THE CONCRETE SETTLES FIRMLY IN PLACE IN THE
+                                                       FORMWORK
+
+RVCRWN                 VIDEO CASSETTE REWINDER
+
+RVIDE0D                VIDEO PLAYER/RECORDER           A DEVICE THAT IS CONNECTED TO A TELEVISION OR A
+                       STATIONARY/PORTABLE AND         MOBILE BATTERY OPERATED DEVICE THAT RECORDS
+                       ACCESSORIES (NOT OTHERWISE      VIDEO VIA DISC, DISK DRIVE, USB FLASH DRIVE, SD
+                                                       MEMORY CARD, ETC. TO WATCH THE CONTENT, SUCH AS
+                       CODED)                          A MOVIE, A RECORDED TV SHOW, OR OTHER CONTENT
+
+RVIDE0R                VIDEO RECORDER
+
+RVIDE0T                VIDEO TUNER/TIMER
+
+VVIEWER                VIEWER
+
+CVIEWFI                VIEWFINDER                      A DEVICE ON A CAMERA, CONSISTING OF A LENS SYSTEM
+                                                       AND SOMETIMES A GROUND-GLASS SCREEN, ENABLING
+                                                       THE USER TO SEE WHAT WILL BE INCLUDED IN HIS OR
+                                                       HER PHOTOGRAPH
+
+MVI0LA                 VIOLA
+
+EVISE                  VISE                            A MECHANICAL APPARATUS CONSISTING OF TWO
+                                                       PARALLEL JAWS, ONE FIXED AND THE OTHER MOVABLE,
+                                                       THREADED IN AND OUT BY A SCREW AND LEVER
+                                                       USED TO SECURE AN OBJECT TO ALLOW WORK TO BE
+                                                       PERFORMED ON IT
+
+RV0ICEC                VOICE CONTROL UNIT
+
+DV0ICER                VOICE RECOGNITION DEVICE (NOT   AN ELECTRONIC DEVICE WITH THE ABILITY TO DECODE
+                       FOR CELL PHONES) AMAZON ECHO,   THE HUMAN VOICE THAT IS COMMONLY USED TO
+                       GOOGLE HOME                     OPERATE A DEVICE TO PERFORM COMMANDS.
+
+
+0V0ICEW                VOICEWRITER
+
+EV0LTME                VOLTMETER                       A VOLTMETER IS USED TO CHECK VOLTAGES AND VERIFY
+                                                       THAT CIRCUITS ARE INDEED LIVE
+
+
+
+
+                                     June 30, 2026
+                                                                                                         37
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                       Description
+RWALKIE                WALKIE TALKIE/HAND-HELD RADIO      A MOBILE, STATIONARY BASE, OR HAND-HELD PORTABLE
+                                                          RADIO THAT CAN BOTH TRANSMIT AND RECEIVE
+                                                          CONTENT WHICH ALLOWS THE OPERATOR TO HAVE
+                                                          A CONVERSATION WITH OTHER SIMILAR RADIOS
+                                                          OPERATING ON THE SAME RADIO FREQUENCY
+
+PWALLET                WALLET
+
+WWASH0E                WASHOVER/ROTARY SHOE
+
+FWASTEB                WASTEBASKET
+
+PWATCH                 WATCH                              A SMALL TIMEPIECE INTENDED TO BE CARRIED OR
+                                                          WORN BY A PERSON (MECHANICAL DEVICE, DRIVEN BY
+                                                          CLOCKWORK, POWERED BY WINDING A MAINSPRING,
+                                                          AND KEEPING TIME WITH AN OSCILLATING BALANCE
+                                                          WHEEL OR THE ELECTRONIC QUARTZ WHICH IS
+                                                          POWERED BY A BATTERY)
+
+HWATERH                WATER HEATER/HOT WATER TANK        AN HOUSEHOLD APPLIANCE CONSISTING OF A GAS
+                                                          OR ELECTRIC HEATING UNIT UNDER A TANK IN WHICH
+                                                          WATER IS HEATED AND STORED
+
+HS0FTEN                WATER SOFTENER/FILTRATION/         ANY TYPE OF SYSTEM OR PROCESS THAT IS USED TO
+                       PURIFICATION SYSTEM                FILTER OUT PARTICLES AND/OR POLLUTANTS FROM
+                                                          WATER
+
+SWTRSPR                WATER SPORTS GEAR AND SUPPLIES EQUIPMENT FOR A SPORT PLAYED OR PRACTICED ON
+                       (NOT OTHERWISE CODED)          OR IN WATER, AS SWIMMING, WATER POLO, OR SURFING,
+                                                          SUCH AS TOWABLE TUBES, BOARDS, LIFE VEST, RAFTS,
+                                                          SCUBA, ETC
+
+EWATTME                WATTMETER                          AN INSTRUMENT FOR MEASURING IN WATTS THE POWER
+                                                          FLOWING IN A CIRCUIT
+
+DSWATCH                WEARABLE DEVICES/ACTIVITY          ANY WIRELESS-ENABLED WEARABLE TECHNOLOGY
+                       TRACKERS                           DEVICE THAT CAN BE WORN ON THE BODY, EITHER AS AN
+                                                          ACCESSORY OR AS PART OF CLOTHING
+
+RWEBTV                 WEB TV
+
+EWEEDER                WEED CUTTER/WEED EATER             A TOOL WHICH CONSISTS OF A CUTTING HEAD AT THE
+                                                          END OF A LONG SHAFT WITH A HANDLE OR HANDLES
+                                                          AND SOMETIMES A SHOULDER STRAP USES A FLEXIBLE
+                                                          MONOFILAMENT LINE OR A BLADE FOR CUTTING GRASS
+                                                          AND OTHER PLANTS NEAR OBJECTS, OR ON STEEP OR
+                                                          IRREGULAR TERRAIN
+
+PWHEELC                WHEELCHAIR, NONMOTORIZED
+
+EWINCH                 WINCH                              A MECHANICAL DEVICE THAT IS USED TO PULL IN (WIND
+                                                          UP) OR LET OUT (WIND OUT) OR OTHERWISE ADJUST THE
+                                                          "TENSION" OF A ROPE OR WIRE ROPE
+
+EWINDRK                WINDSHIELD REPAIR KIT (MOBILE
+                       DEVICE TO REPAIR WINDSHIELDS)
+
+SSN0WGR                WINTER/SNOW SPORTS GEAR AND    A SPORT WHICH IS PLAYED DURING COLD WEATHER
+                       SUPPLIES (NOT OTHERWISE CODED) MONTHS, SUCH AS SKIING, ICE SKATING, SLEDDING, ICE
+                                                          SKATING, ICE HOCKEY, SNOWBOARDING, ETC
+
+EWIREST                WIRE STRIPPER                      A DEVICE EQUIPPED WITH DIFFERENT SIZED CUTTING
+                                                          TEETH FOR VARIOUS SIZED WIRES USED TO CUT THE
+                                                          INSULATION OFF OF THE WIRE
+
+DWIRREC                WIRELESS RECEIVER (WIRELESS
+                       AIRCARD OR RECEIVER FOR PDA'S,
+                       COMPUTERS AND OTHER HANDHELD
+                       COMPUTING DEVICES)
+
+
+
+
+                                    June 30, 2026
+                                                                                                           38
+          1.2 - Article Type (TYP) Field Codes by Article Name
+
+
+Code                   Article Name                Description
+EW00DSH                WOOD SHAPER                 A STATIONARY WOODWORKING MACHINE IN WHICH A
+                                                   VERTICALLY ORIENTATED SPINDLE PROTRUDES FROM
+                                                   THE MACHINE TABLE AND CAN BE SPUN AT SPEEDS
+                                                   TYPICALLY BETWEEN 3,000 AND 10,000 RPM
+
+HW00DST                WOODBURNING STOVE/WOOD      AN HEATING APPLIANCE CAPABLE OF BURNING WOOD
+                       BURNER                      FUEL AND WOOD-DERIVED BIOMASS FUEL, SUCH AS
+                                                   WOOD PELLETS; GENERALLY THE APPLIANCE CONSISTS
+                                                   OF A SOLID METAL (USUALLY CAST IRON OR STEEL)
+                                                   CLOSED FIRE CHAMBER, A FIRE BRICK BASE AND AN
+                                                   ADJUSTABLE AIR CONTROL
+
+DW0RDPR                WORD PROCESSOR
+
+EWRENCH                WRENCH                      A HAND, AIR-POWERED OR HYDRAULICALLY TOOL USED
+                                                   TO PROVIDE GRIP AND MECHANICAL ADVANTAGE IN
+                                                   APPLYING TORQUE TO TURN OBJECTS, USUALLY ROTARY
+                                                   FASTENERS, SUCH AS NUTS AND BOLTS
+
+EXRAY                  X-RAY EQUIPMENT
+
+MXYL0PH                XYLOPHONE
+
+HYGRTMC                YOGURT MACHINE
+
+
+
+
+                                   June 30, 2026
+                                                                                                  39
+                        2 - Article Brand Name (BRA) Field Codes
+
+
+Do not consider the words AND, COMPANY, CORPORATION, INCORPORATED, LIMITED, and the ampersand as part of
+the brand name.
+
+Additional coding instructions can be found in the Article File chapter of the NCIC Operating Manual.
+
+If the brand name is not listed below, the following coding instructions should be followed.
+
+If the brand name consists of:
+
+         • A single word: the first six letters of the name must be used.
+         • Two words: the first letter of the first word, followed by a space, and then the first four letters of the
+           second word should be entered.
+         • Three words: the first letter of the first word must be used, followed by a space, then the first letter of
+           the second word followed by a space, and then the first two letters of the last word should be entered.
+         • An initial and one word: the initial, followed by a space, and the first four letters of the word must be
+           used.
+         • Two initials and one word: the first initial followed by a space, then the second initial followed by a
+           space, and then the brand name must be used.
+         • Initials: the initials should be entered omitting spaces and periods.
+
+Code                                   Brand Name
+3M                                     3M
+
+A AMER                                 ACER AMERICAN CORPORATION
+
+A CHAL                                 ALLIS CHALMERS
+
+A TOUR                                 AMERICAN TOURISTER
+
+AGFA                                   AGFA
+
+AIRLIN                                 AIRLINE (MANUFACTURED FOR MONTGOMERY WARD)
+
+ALPINE                                 ALPINE
+
+AMANA                                  AMANA
+
+AMF                                    AMF
+
+APPLE                                  APPLE
+
+B DECK                                 BLACK AND DECKER
+
+B L0MB                                 BAUSCH AND LOMB
+
+B STRA                                 BRIGGS &AMP; STRATTON
+
+B0RLAN                                 BORLAND
+
+B0SCH                                  BOSCH
+
+BASSET                                 BASSETT
+
+BAUER                                  BAUER
+
+BERNIA                                 BERNIA
+
+BISSEL                                 BISSELL
+
+BR0THE                                 BROTHER
+
+BRADF0                                 BRADFORD (MANUFACTURED FOR W. T. GRANT)
+
+BSR                                    BSR
+
+
+
+
+                                                      June 30, 2026
+                                                                                                                         40
+         2 - Article Brand Name (BRA) Field Codes
+
+
+Code             Brand Name
+BURT0N           BURTON
+
+BUSHNE           BUSHNELL
+
+C INLI           CCM INLINES
+
+C M SY           COLORADO MEMORY SYSTEMS
+
+C MAST           CHANNEL MASTER
+
+C MATH           CURTIS MATHES
+
+C PR0            CALIFORNIA PRO
+
+C0BRA            COBRA
+
+C0MM0D           COMMODORE
+
+CAN0N            CANON
+
+CARRIE           CARRIER
+
+CASI0            CASIO
+
+CRAFTS           CRAFTSMAN
+
+D MINT           DANBURY MINT
+
+D0NRUS           DONRUSS
+
+DAEW00           DAEWOO
+
+DELTA            DELTA
+
+DICTAP           DICTAPHONE
+
+DREMEL           DREMEL
+
+DYN0             DYNO
+
+DYNAST           DYNASTAR
+
+E K0DA           EASTMAN KODAK
+
+ELECTR           ELECTROPHONIC
+
+ELF              ELF
+
+ELGIN            ELGIN (LORD OR LADY)
+
+EMERS0           EMERSON
+
+ENESC0           ENESCO
+
+EPS0N            EPSON
+
+EUREKA           EUREKA
+
+F SPRT           FREE SPIRIT (BICYCLE MODEL OF SEARS, ROEBUCK &AMP; CO.)
+
+FARBER           FARBERWARE
+
+FISHER           FISHER
+
+FRANKL           FRANKLIN
+
+FRIGID           FRIGIDAIRE
+
+
+
+
+                               June 30, 2026
+                                                                           41
+         2 - Article Brand Name (BRA) Field Codes
+
+
+Code             Brand Name
+FUJITS           FUJITSU
+
+G 2000           GATEWAY 2000
+
+G ELEC           GENERAL ELECTRIC
+
+G0LDST           GOLDSTAR
+
+G0RMAN           GORMAN
+
+GAF              GAF
+
+GARMIN           GARMIN
+
+GARRAR           GARRARD
+
+GT               GT
+
+GUCCI            GUCCI
+
+H BEAC           HAMILTON BEACH
+
+H PACK           HEWLETT-PACKARD COMPANY
+
+H00VER           HOOVER
+
+HILTI            HILTI
+
+HITACH           HITACHI
+
+HUFFY            HUFFY
+
+HUMMEL           HUMMEL
+
+HUSQVA           HUSQVARNA
+
+HYUNDA           HYUNDAI
+
+IBM              IBM (INTERNATIONAL BUSINESS MACHINES)
+
+IMPULS           IMPULSE
+
+J C PE           J. C. PENNEY
+
+J DEER           JOHN DEERE
+
+J MESS           JOHNSON MESSENGER
+
+JACUZZ           JACUZZI
+
+JVC              JVC
+
+K2               K-2
+
+K LOCK           KWICK-LOCK
+
+K MART           K MART
+
+KAZAZ            KAZAZ
+
+KEMPER           KEMPER
+
+KENMOR           KENMORE
+
+KITCHE           KITCHENAID
+
+KONICA           KONICA
+
+
+
+
+                                June 30, 2026
+                                                         42
+         2 - Article Brand Name (BRA) Field Codes
+
+
+Code             Brand Name
+L BOY            LAWN BOY
+
+L C SM           L. C. SMITH
+
+L J ST           LEAR JET STEREO, INC.
+
+LANIER           LANIER
+
+LINCOL           LINCOLN
+
+LIONEL           LIONEL
+
+LITTON           LITTON
+
+LLADRO           LLADRO
+
+M BENZ           MERCEDES-BENZ
+
+M ELEC           MICRON ELECTRONICS, INC.
+
+M FALL           MILLERS FALLS
+
+M N SO           MOUNTAIN NETWORK SOLUTIONS, INC.
+
+M WARD           MONTGOMERY WARD AND CO.
+
+MAGELL           MAGELLAN
+
+MAGNAV           MAGNAVOX
+
+MAKITA           MAKITA USA, INC.
+
+MARANT           MARANTZ
+
+MATCO            MATCO
+
+MAYTAG           MAYTAG
+
+MCCULL           MCCULLOCH
+
+MICROS           MICROSOFT
+
+MIDLAN           MIDLAND
+
+MINOLT           MINOLTA
+
+MITSUB           MITSUBISHI
+
+MONGOO           MONGOOSE
+
+MOTORO           MOTOROLA
+
+MURATA           MURATA
+
+N TRAC           NORDICTRACK
+
+NCR              NCR (NATIONAL CASH REGISTER CO.)
+
+NEC              NEC
+
+NIKON            NIKON
+
+NINTEN           NINTENDO
+
+NORDIC           NORDICA
+
+NOVELL           NOVELL
+
+
+
+
+                               June 30, 2026
+                                                    43
+         2 - Article Brand Name (BRA) Field Codes
+
+
+Code             Brand Name
+P ASAH           PENTAX ASAHI
+
+P BELL           PACKARD BELL
+
+P BOWE           PITNEY BOWES
+
+P FORM           PRO FORM
+
+PANASO           PANASONIC
+
+PARKPR           PARKPRE
+
+PEERLE           PEERLESS
+
+PENNCR           PENNCREST (MANUFACTURED FOR J. C. PENNEY)
+
+PENTAX           PENTAX
+
+PFAFF            PFAFF
+
+PHILCO           PHILCO
+
+PIONEE           PIONEER
+
+POLARO           POLAROID
+
+PORSCH           PORSCHE
+
+POWERL           POWERLITE
+
+PRINCE           PRINCE CORPORATION
+
+QUASAR           QUASAR
+
+R RAND           REMINGTON RAND
+
+RAICHL           RAICHLE
+
+RAINBO           RAINBOW
+
+RAMSET           RAMSET
+
+RAYBAN           RAYBAN
+
+RCA              RCA (RADIO CORPORATION OF AMERICA)
+
+REMING           REMINGTON
+
+RICOH            RICOH
+
+ROBINS           ROBINSON
+
+ROCES            ROCES
+
+ROLEX            ROLEX
+
+ROLLER           ROLLERBLADE
+
+ROSSIG           ROSSIGNOL
+
+RUBBER           RUBBERMAID
+
+RYAN             RYAN
+
+RYOBI            RYOBI
+
+S CORO           SMITH CORONA
+
+
+
+
+                              June 30, 2026
+                                                             44
+         2 - Article Brand Name (BRA) Field Codes
+
+
+Code             Brand Name
+S ROEB           SEARS, ROEBUCK &AMP; CO.
+
+S TOOL           SNAP-ON TOOLS
+
+SALOMO           SALOMON
+
+SAMSON           SAMSONITE
+
+SAMSUN           SAMSUNG
+
+SANBOR           SANBORN
+
+SANSUI           SANSUI
+
+SANYO            SANYO
+
+SCHWIN           SCHWIN
+
+SEGA             SEGA
+
+SEIKO            SEIKO
+
+SHARP            SHARP
+
+SHREDD           SHREDDER
+
+SILVER           SILVERTONE (MANUFACTURED FOR SEARS, ROEBUCK &AMP; CO.)
+
+SINGER           SINGER
+
+SKIL             SKIL CORPORATION
+
+SNAPPE           SNAPPER
+
+SONY             SONY
+
+STANLE           STANLEY
+
+STIHL            STIHL
+
+SWIFT            SWIFT
+
+SYLVAN           SYLVANIA
+
+SYMAN            SYMANTEC
+
+T INST           TEXAS INSTRUMENTS
+
+TECHNI           TECHNICS
+
+TECUMS           TECUMSEH
+
+THOMAS           THOMASVILLE
+
+TIMEX            TIMEX
+
+TONKA            TONKA
+
+TOPPS            TOPPS
+
+TORO             TORO
+
+TOSHIB           TOSHIBA
+
+TRANE            TRANE
+
+U DECK           UPPER DECK
+
+
+
+
+                               June 30, 2026
+                                                                          45
+         2 - Article Brand Name (BRA) Field Codes
+
+
+Code             Brand Name
+U S RO           U.S. ROBOTICS
+
+U WHEE           ULTRA-WHEELS
+
+UNIDEN           UNIDEN
+
+USDA             U.S. DEPARTMENT OF AGRICULTURE (FOOD STAMPS)
+
+VIVITA           VIVITAR
+
+W AUTO           WESTERN FLYER (WESTERN AUTO)
+
+W ELEC           WESTERN ELECTRIC
+
+WESTIN           WESTINGHOUSE
+
+WHIRLP           WHIRLPOOL
+
+WORDPE           WORDPERFECT
+
+XEROX            XEROX
+
+YAMAHA           YAMAHA
+
+YASHIC           YASHICA
+
+ZENITH           ZENITH
+
+ZEOS             ZEOS
+
+
+
+
+                             June 30, 2026
+                                                                46
+Boat Data Codes
+As of June 30, 2026
+                             Boat Data Codes
+                             Table of Contents
