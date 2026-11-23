@@ -108,7 +108,7 @@ CodeSet,SectionName,SubSectionName,CategoryCode,CategoryDescription,Column,Name,
 "VMA/VMO","Vehicle Data Codes","2.2 - Vehicle Make/Brand (VMA) and Model (VMO) for Automobiles, Light-Duty Vans, Light-Duty Trucks, and Parts","AER0","AIRCRAFT SEE THE VEHICLE FILE CHAPTER OF THE NCIC OPERATING MANUAL",3,"Comment","",780,27,54253
 ```
 
-### This structure when uploaded to a DB is easily pivot-ready - SEE SQL Config.sql
+### This structure when uploaded to a DB is easily pivot-ready - SEE src/Resources/SQL Config.sql
 
 ## Requirements
 
