@@ -20,8 +20,12 @@ tables will be managed in the dbo schema.
 -- NOTE: it will choose the same db file (NCICCodes) as the file name automatically - that's ok
 
 -- 2: Post import Run to clean up these erroneous Category codes...
-UPDATE  dbo.NCICCodes SET [CategoryCode] = null, [CategoryDescription] = null WHERE [CategoryCode] like 'Sorted%'
-UPDATE  dbo.NCICCodes SET [CategoryCode] = null, [CategoryDescription] = null WHERE [CategoryCode] like 'Most Fr%'
+UPDATE dbo.NCICCodes SET [CategoryCode] = null, [CategoryDescription] = null WHERE [CategoryCode] like 'Sorted%'
+UPDATE dbo.NCICCodes SET [CategoryCode] = null, [CategoryDescription] = null WHERE [CategoryCode] like 'Most Fr%'
+
+-- These are reference only and not required to maintain
+DELETE FROM dbo.NCICCodes WHERE [SubSectionName] = '1 - Introduction to State and Country Field Usage' 
+DELETE FROM dbo.NCICCodes WHERE [SubSectionName] = '2.3 - For Reference Only Country Codes'
 
 -- 3: Use Pivot alone to insert into new (wide) table NCICCodesTemp
 SELECT
